@@ -14,6 +14,8 @@
 		BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */; };
 		BF6EA05C1FB7007F00B49A85 /* wenwenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */; };
 		BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA06A1FB7031F00B49A85 /* Podfile */; };
+		BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F001FB7056E0008DC38 /* WWSpecs.swift */; };
+		BF784F031FB705870008DC38 /* WWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F021FB705870008DC38 /* WWTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenwenTests.swift; sourceTree = "<group>"; };
 		BF6EA05D1FB7007F00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6EA06A1FB7031F00B49A85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
+		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
 		ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wenwen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 				BF6EA0681FB701C100B49A85 /* Controller */,
 				BF6EA0671FB701BC00B49A85 /* View */,
 				BF6EA0661FB701B300B49A85 /* Model */,
+				BF6EA06D1FB704CF00B49A85 /* Tools */,
 				BF6EA0691FB701E300B49A85 /* Resource */,
 			);
 			path = wenwen;
@@ -150,6 +155,15 @@
 				BF6EA0521FB7007E00B49A85 /* Info.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BF6EA06D1FB704CF00B49A85 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BF784F001FB7056E0008DC38 /* WWSpecs.swift */,
+				BF784F021FB705870008DC38 /* WWTheme.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
+				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 			);
