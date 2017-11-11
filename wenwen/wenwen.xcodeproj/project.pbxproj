@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF6EA0471FB7007E00B49A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */; };
+		BF6EA0491FB7007E00B49A85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* ViewController.swift */; };
+		BF6EA04C1FB7007E00B49A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04A1FB7007E00B49A85 /* Main.storyboard */; };
+		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
+		BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */; };
+		BF6EA05C1FB7007F00B49A85 /* wenwenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF6EA0581FB7007F00B49A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF6EA03B1FB7007E00B49A85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF6EA0421FB7007E00B49A85;
+			remoteInfo = wenwen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF6EA0481FB7007E00B49A85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF6EA04B1FB7007E00B49A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF6EA0501FB7007E00B49A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF6EA0521FB7007E00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6EA0571FB7007E00B49A85 /* wenwenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wenwenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenwenTests.swift; sourceTree = "<group>"; };
+		BF6EA05D1FB7007F00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF6EA0401FB7007E00B49A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6EA0541FB7007E00B49A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF6EA03A1FB7007E00B49A85 = {
+			isa = PBXGroup;
+			children = (
+				BF6EA0451FB7007E00B49A85 /* wenwen */,
+				BF6EA05A1FB7007F00B49A85 /* wenwenTests */,
+				BF6EA0441FB7007E00B49A85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF6EA0441FB7007E00B49A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF6EA0431FB7007E00B49A85 /* wenwen.app */,
+				BF6EA0571FB7007E00B49A85 /* wenwenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6EA0451FB7007E00B49A85 /* wenwen */ = {
+			isa = PBXGroup;
+			children = (
+				BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */,
+				BF6EA0481FB7007E00B49A85 /* ViewController.swift */,
+				BF6EA04A1FB7007E00B49A85 /* Main.storyboard */,
+				BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */,
+				BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */,
+				BF6EA0521FB7007E00B49A85 /* Info.plist */,
+			);
+			path = wenwen;
+			sourceTree = "<group>";
+		};
+		BF6EA05A1FB7007F00B49A85 /* wenwenTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */,
+				BF6EA05D1FB7007F00B49A85 /* Info.plist */,
+			);
+			path = wenwenTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF6EA0421FB7007E00B49A85 /* wenwen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6EA0601FB7007F00B49A85 /* Build configuration list for PBXNativeTarget "wenwen" */;
+			buildPhases = (
+				BF6EA03F1FB7007E00B49A85 /* Sources */,
+				BF6EA0401FB7007E00B49A85 /* Frameworks */,
+				BF6EA0411FB7007E00B49A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wenwen;
+			productName = wenwen;
+			productReference = BF6EA0431FB7007E00B49A85 /* wenwen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF6EA0561FB7007E00B49A85 /* wenwenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6EA0631FB7007F00B49A85 /* Build configuration list for PBXNativeTarget "wenwenTests" */;
+			buildPhases = (
+				BF6EA0531FB7007E00B49A85 /* Sources */,
+				BF6EA0541FB7007E00B49A85 /* Frameworks */,
+				BF6EA0551FB7007E00B49A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF6EA0591FB7007F00B49A85 /* PBXTargetDependency */,
+			);
+			name = wenwenTests;
+			productName = wenwenTests;
+			productReference = BF6EA0571FB7007E00B49A85 /* wenwenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF6EA03B1FB7007E00B49A85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = wenwenkeji;
+				TargetAttributes = {
+					BF6EA0421FB7007E00B49A85 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BF6EA0561FB7007E00B49A85 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF6EA0421FB7007E00B49A85;
+					};
+				};
+			};
+			buildConfigurationList = BF6EA03E1FB7007E00B49A85 /* Build configuration list for PBXProject "wenwen" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF6EA03A1FB7007E00B49A85;
+			productRefGroup = BF6EA0441FB7007E00B49A85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF6EA0421FB7007E00B49A85 /* wenwen */,
+				BF6EA0561FB7007E00B49A85 /* wenwenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF6EA0411FB7007E00B49A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
+				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
+				BF6EA04C1FB7007E00B49A85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6EA0551FB7007E00B49A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF6EA03F1FB7007E00B49A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6EA0491FB7007E00B49A85 /* ViewController.swift in Sources */,
+				BF6EA0471FB7007E00B49A85 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6EA0531FB7007E00B49A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6EA05C1FB7007F00B49A85 /* wenwenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF6EA0591FB7007F00B49A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF6EA0421FB7007E00B49A85 /* wenwen */;
+			targetProxy = BF6EA0581FB7007F00B49A85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF6EA04A1FB7007E00B49A85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6EA04B1FB7007E00B49A85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6EA0501FB7007E00B49A85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF6EA05E1FB7007F00B49A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF6EA05F1FB7007F00B49A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF6EA0611FB7007F00B49A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRV2MP5LUD;
+				INFOPLIST_FILE = wenwen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF6EA0621FB7007F00B49A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRV2MP5LUD;
+				INFOPLIST_FILE = wenwen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF6EA0641FB7007F00B49A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRV2MP5LUD;
+				INFOPLIST_FILE = wenwenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenwen.app/wenwen";
+			};
+			name = Debug;
+		};
+		BF6EA0651FB7007F00B49A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRV2MP5LUD;
+				INFOPLIST_FILE = wenwenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenwen.app/wenwen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF6EA03E1FB7007E00B49A85 /* Build configuration list for PBXProject "wenwen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6EA05E1FB7007F00B49A85 /* Debug */,
+				BF6EA05F1FB7007F00B49A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6EA0601FB7007F00B49A85 /* Build configuration list for PBXNativeTarget "wenwen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6EA0611FB7007F00B49A85 /* Debug */,
+				BF6EA0621FB7007F00B49A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6EA0631FB7007F00B49A85 /* Build configuration list for PBXNativeTarget "wenwenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6EA0641FB7007F00B49A85 /* Debug */,
+				BF6EA0651FB7007F00B49A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF6EA03B1FB7007E00B49A85 /* Project object */;
+}
