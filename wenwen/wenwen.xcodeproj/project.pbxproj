@@ -376,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRV2MP5LUD;
 				INFOPLIST_FILE = "$(SRCROOT)/wenwen/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRV2MP5LUD;
 				INFOPLIST_FILE = "$(SRCROOT)/wenwen/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
