@@ -9,6 +9,12 @@
 
 import UIKit
 
+extension UIViewController {
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+}
+
 final class WWBaseDelegate {
     static let shareDelegate = WWBaseDelegate()
     
