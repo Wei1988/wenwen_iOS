@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF6EA0471FB7007E00B49A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */; };
-		BF6EA0491FB7007E00B49A85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* ViewController.swift */; };
-		BF6EA04C1FB7007E00B49A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04A1FB7007E00B49A85 /* Main.storyboard */; };
+		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
+		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
 		BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */; };
 		BF6EA05C1FB7007F00B49A85 /* wenwenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */; };
@@ -27,9 +26,8 @@
 
 /* Begin PBXFileReference section */
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF6EA0481FB7007E00B49A85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF6EA04B1FB7007E00B49A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
+		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
 		BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6EA0501FB7007E00B49A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF6EA0521FB7007E00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,12 +75,11 @@
 		BF6EA0451FB7007E00B49A85 /* wenwen */ = {
 			isa = PBXGroup;
 			children = (
-				BF6EA0461FB7007E00B49A85 /* AppDelegate.swift */,
-				BF6EA0481FB7007E00B49A85 /* ViewController.swift */,
-				BF6EA04A1FB7007E00B49A85 /* Main.storyboard */,
-				BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */,
-				BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */,
-				BF6EA0521FB7007E00B49A85 /* Info.plist */,
+				BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */,
+				BF6EA0681FB701C100B49A85 /* Controller */,
+				BF6EA0671FB701BC00B49A85 /* View */,
+				BF6EA0661FB701B300B49A85 /* Model */,
+				BF6EA0691FB701E300B49A85 /* Resource */,
 			);
 			path = wenwen;
 			sourceTree = "<group>";
@@ -94,6 +91,38 @@
 				BF6EA05D1FB7007F00B49A85 /* Info.plist */,
 			);
 			path = wenwenTests;
+			sourceTree = "<group>";
+		};
+		BF6EA0661FB701B300B49A85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF6EA0671FB701BC00B49A85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF6EA0681FB701C100B49A85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF6EA0481FB7007E00B49A85 /* WWViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF6EA0691FB701E300B49A85 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */,
+				BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */,
+				BF6EA0521FB7007E00B49A85 /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +210,6 @@
 			files = (
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
 				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
-				BF6EA04C1FB7007E00B49A85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6EA0491FB7007E00B49A85 /* ViewController.swift in Sources */,
-				BF6EA0471FB7007E00B49A85 /* AppDelegate.swift in Sources */,
+				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
+				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +251,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BF6EA04A1FB7007E00B49A85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF6EA04B1FB7007E00B49A85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRV2MP5LUD;
-				INFOPLIST_FILE = wenwen/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/wenwen/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRV2MP5LUD;
-				INFOPLIST_FILE = wenwen/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/wenwen/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
