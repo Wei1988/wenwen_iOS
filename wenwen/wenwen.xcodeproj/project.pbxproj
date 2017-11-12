@@ -16,6 +16,10 @@
 		BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA06A1FB7031F00B49A85 /* Podfile */; };
 		BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F001FB7056E0008DC38 /* WWSpecs.swift */; };
 		BF784F031FB705870008DC38 /* WWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F021FB705870008DC38 /* WWTheme.swift */; };
+		BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F051FB731620008DC38 /* WWTextFieldView.swift */; };
+		BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */; };
+		BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0B1FB733930008DC38 /* GCDHelper.swift */; };
+		BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		BF6EA06A1FB7031F00B49A85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
 		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
+		BF784F051FB731620008DC38 /* WWTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTextFieldView.swift; sourceTree = "<group>"; };
+		BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterOneViewController.swift; sourceTree = "<group>"; };
+		BF784F0B1FB733930008DC38 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
+		BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownHandler.swift; sourceTree = "<group>"; };
 		ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wenwen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +143,7 @@
 		BF6EA0671FB701BC00B49A85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF784F071FB731660008DC38 /* Common */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 		BF6EA0681FB701C100B49A85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF784F0A1FB732400008DC38 /* Register */,
 				BF784F041FB70A2D0008DC38 /* Base */,
 			);
 			path = Controller;
@@ -162,6 +172,8 @@
 			children = (
 				BF784F001FB7056E0008DC38 /* WWSpecs.swift */,
 				BF784F021FB705870008DC38 /* WWTheme.swift */,
+				BF784F0B1FB733930008DC38 /* GCDHelper.swift */,
+				BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -172,6 +184,22 @@
 				BF6EA0481FB7007E00B49A85 /* WWViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BF784F071FB731660008DC38 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF784F051FB731620008DC38 /* WWTextFieldView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF784F0A1FB732400008DC38 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,10 +378,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
 				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
+				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
+				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
+				BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
