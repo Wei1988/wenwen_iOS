@@ -12,9 +12,13 @@ import SnapKit
 class WWRegisterOneViewController: WWScrollViewController {
     // constants
     let margin: CGFloat = 15
-    let phoneTopGap: CGFloat = 120
+    let phoneTopGap: CGFloat = 90
+    let titleViewHeight: CGFloat = 30
+    let titleViewTopGap: CGFloat = 50
     var buttonTopConstraint: Constraint?
     // UI Items
+    private let titleView = UIView()
+    private let titleLabel = UILabel()
     private let phoneTextfieldView = WWTextFieldView(false)
     private let captchaTextfieldView = WWTextFieldView(false)
     private let passwordTextfieldView = WWTextFieldView(false)
@@ -22,23 +26,36 @@ class WWRegisterOneViewController: WWScrollViewController {
     private let policyButton = UIButton()
     private let loginButton = UIButton()
     private let nextStepButton = UIButton()
+    private let countDownButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "注册"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: wwTheme.fontColor4]
-        scrollContainerView.backgroundColor = wwTheme.bgGray1
-        scrollView.backgroundColor = wwTheme.bgGray1
+//        self.title = "注册"
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: wwTheme.fontColor4]
+        scrollContainerView.backgroundColor = .white
+        scrollView.backgroundColor = .white
         setupAndLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let gap = WWSpecs.windowHeight() - (phoneTopGap+46+13+46+13+46+13+16+160+45+20+45+20) - 64
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+phoneTopGap+46+13+46+13+46+13+16+160+45+20+45+20)-20
         buttonTopConstraint?.update(offset: 160 + gap)
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = nil
+    }
+    
+    
     func setupAndLayout() {
+        setuptitleLabel()
         setupPhoneTextfieldView()
         setupCaptchaTextfieldView()
         setupPasswordTextfieldView()
@@ -46,12 +63,33 @@ class WWRegisterOneViewController: WWScrollViewController {
         setupAndLayoutBottomButtons()
     }
     
+    func setuptitleLabel() {
+        titleView.translatesAutoresizingMaskIntoConstraints = false
+        scrollContainerView.addSubview(titleView)
+        titleView.snp.makeConstraints { (make) in
+            make.height.equalTo(titleViewHeight)
+            make.centerX.equalTo(scrollContainerView.snp.centerX)
+            make.left.equalTo(scrollContainerView.snp.left)
+            make.right.equalTo(scrollContainerView.snp.right)
+            make.top.equalTo(scrollContainerView.snp.top).offset(52)
+        }
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (make) in
+            make.edges.equalTo(titleView.snp.edges)
+        }
+        titleLabel.text = "注册"
+        titleLabel.textColor = wwTheme.fontColor4
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.systemFont(ofSize: 22)
+    }
+    
     func setupPhoneTextfieldView() {
         phoneTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(phoneTextfieldView)
         phoneTextfieldView.snp.makeConstraints { (make) in
             make.height.equalTo(46)
-            make.top.equalTo(scrollContainerView.snp.top).offset(phoneTopGap)
+            make.top.equalTo(titleView.snp.bottom).offset(phoneTopGap)
             make.left.equalTo(scrollContainerView.snp.left).offset(margin)
             make.right.equalTo(scrollContainerView.snp.right).offset(-margin)
         }
@@ -80,6 +118,29 @@ class WWRegisterOneViewController: WWScrollViewController {
         captchaTextfieldView.textfield.attributedPlaceholder = attString
         captchaTextfieldView.textfield.textColor = wwTheme.fontColor4
         captchaTextfieldView.textfield.font = UIFont.systemFont(ofSize: 14)
+        captchaTextfieldView.textFieldRightConstraint?.update(offset: -100)
+        // 倒计时按钮
+        let dividerLine = UIView()
+        dividerLine.translatesAutoresizingMaskIntoConstraints = false
+        dividerLine.backgroundColor = wwTheme.fontColor1
+        captchaTextfieldView.addSubview(dividerLine)
+        dividerLine.snp.makeConstraints { (make) in
+            make.width.equalTo(1)
+            make.height.equalTo(18)
+            make.top.equalTo(captchaTextfieldView.snp.top).offset(14)
+            make.right.equalTo(captchaTextfieldView.snp.right).offset(-100)
+        }
+        countDownButton.translatesAutoresizingMaskIntoConstraints = false
+        captchaTextfieldView.addSubview(countDownButton)
+        countDownButton.snp.makeConstraints { (make) in
+            make.width.equalTo(80)
+            make.height.equalTo(20)
+            make.centerY.equalTo(captchaTextfieldView.snp.centerY)
+            make.right.equalTo(captchaTextfieldView.snp.right).offset(-10)
+        }
+        countDownButton.setTitle("获取验证码", for: UIControlState())
+        countDownButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        countDownButton.setTitleColor(wwTheme.fontColor2, for: UIControlState())
     }
     
     func setupPasswordTextfieldView() {

@@ -48,7 +48,7 @@ final class WWTextFieldView: UIView {
             make.left.equalTo(iconView.snp.right).offset(12)
             make.bottom.equalTo(self.snp.bottom)
             make.top.equalTo(self.snp.top)
-            make.right.equalTo(self.snp.right)
+            textFieldRightConstraint = make.right.equalTo(self.snp.right).constraint
         }
         textfield.clearButtonMode = .whileEditing
     }
