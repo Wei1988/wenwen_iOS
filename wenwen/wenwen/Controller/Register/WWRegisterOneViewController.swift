@@ -30,8 +30,6 @@ class WWRegisterOneViewController: WWScrollViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "注册"
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: wwTheme.fontColor4]
         scrollContainerView.backgroundColor = .white
         scrollView.backgroundColor = .white
         setupAndLayout()
@@ -43,14 +41,20 @@ class WWRegisterOneViewController: WWScrollViewController {
         let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+phoneTopGap+46+13+46+13+46+13+16+160+45+20+45+20)-20
         buttonTopConstraint?.update(offset: 160 + gap)
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = nil
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    // MARK: - Button Actions
+    @objc func nextStepButtonClicked() {
+        let vc = WWRegisterTwoViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -218,5 +222,6 @@ class WWRegisterOneViewController: WWScrollViewController {
         nextStepButton.backgroundColor = wwTheme.fontColor2
         nextStepButton.layer.cornerRadius = 8
         nextStepButton.layer.masksToBounds = true
+        nextStepButton.addTarget(self, action: #selector(nextStepButtonClicked), for: .touchUpInside)
     }
 }

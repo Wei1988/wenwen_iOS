@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46944BD2702FC58FFA853372 /* Pods_wenwen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */; };
+		BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		13A6B2E58B4A77EDE31B91A0 /* Pods-wenwen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wenwen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wenwen/Pods-wenwen.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2EDFDD2825DE01E76B06D5 /* Pods-wenwen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wenwen.release.xcconfig"; path = "Pods/Target Support Files/Pods-wenwen/Pods-wenwen.release.xcconfig"; sourceTree = "<group>"; };
+		BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterTwoViewController.swift; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */,
+				BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
+				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
 				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
