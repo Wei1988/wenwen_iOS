@@ -1,49 +1,57 @@
 //
-//  WWRegisterTwoViewController.swift
+//  WWRegisterThreeViewController.swift
 //  wenwen
 //
-//  Created by Wei Zhang on 2017/11/14.
+//  Created by Wei Zhang on 2017/11/15.
 //  Copyright © 2017年 wenwenkeji. All rights reserved.
 //
 
 import SnapKit
 import UIKit
 
-class WWRegisterTwoViewController: WWScrollViewController {
-    // constants
+class WWRegisterThreeViewController: WWScrollViewController {
+    // 常数
     let margin: CGFloat = 15
     let titleViewHeight: CGFloat = 30
     let titleViewTopGap: CGFloat = 50
-    let buttonsTopGap: CGFloat = 110
+    let buttonsTopGap: CGFloat = 60
+    let collectionViewTopGap: CGFloat = 60
     let textfieldViewHeight: CGFloat = 46
+    let collectionViewHeight: CGFloat = WWSpecs.windowWidth()*0.93
     var buttonTopConstraint: Constraint?
-    // UI items
+    // UI控件
     private let titleView = UIView()
-    private let nameTextfieldView = WWTextFieldView(false)
-    private let birthdayTextfieldView = WWTextFieldView(true)
-    private let genderTextfieldView = WWTextFieldView(true)
-    private let statusTextfieldView = WWTextFieldView(true)
-    private let cityTextfieldView = WWTextFieldView(true)
     private let nextStepButton = UIButton()
     private let previousButton = UIButton()
+    // 模拟数据
+    private let texts: [String] = ["抑郁症", "中医养生", "其他", "癌症", "艾滋", "白血病", "糖尿病"]
+    //自定义的环形布局
+    var loopLayout:LoopCollectionViewLayout!
+    private var collectionView:UICollectionView!
+    //重用的单元格的Identifier
+    let CellIdentifier = "loopCell"
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+textfieldViewHeight+5*textfieldViewHeight+4*13+buttonsTopGap+2*45+2*20)-64
+        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+collectionViewTopGap+collectionViewHeight+buttonsTopGap+2*45+2*20)-20
         buttonTopConstraint?.update(offset: buttonsTopGap + gap)
     }
     
 //    override func viewWillDisappear(_ animated: Bool) {
 //        super.viewWillDisappear(animated)
-//        //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-////        self.navigationController?.navigationBar.shadowImage = nil
 //        self.navigationController?.setNavigationBarHidden(false, animated: animated)
 //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAndLayoutView()
+        setupAndLayoutViews()
+    }
+    
+    func setupAndLayoutViews() {
+        setupTitleView()
+        setupCollectionView()
+        setupButtons()
     }
     
     // MARK: - Button Actions
@@ -55,13 +63,6 @@ class WWRegisterTwoViewController: WWScrollViewController {
         let vc = WWRegisterThreeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    func setupAndLayoutView() {
-        setupTitleView()
-        setupTextfieldViews()
-        setupButton()
-    }
-   
     
     func setupTitleView() {
         titleView.translatesAutoresizingMaskIntoConstraints = false
@@ -78,61 +79,30 @@ class WWRegisterTwoViewController: WWScrollViewController {
             make.edges.equalTo(titleView.snp.edges)
         }
         label.textAlignment = .center
-        label.text = "完善资料让别人更容易找到你"
+        label.text = "选择您的患病类型"
         label.font = UIFont.systemFont(ofSize: 22)
         label.textColor = wwTheme.fontColor4
     }
     
-    func setupTextfieldViews() {
-        // name text field
-        nameTextfieldView.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(nameTextfieldView)
-        commonSetupForTextfieldView(nameTextfieldView, titleView, 90, "昵称")
-        // birthday text field
-        birthdayTextfieldView.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(birthdayTextfieldView)
-        commonSetupForTextfieldView(birthdayTextfieldView, nameTextfieldView, 13, "生日")
-        // gender text field
-        genderTextfieldView.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(genderTextfieldView)
-        commonSetupForTextfieldView(genderTextfieldView, birthdayTextfieldView, 13, "性别")
-        // status text field
-        statusTextfieldView.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(statusTextfieldView)
-        commonSetupForTextfieldView(statusTextfieldView, genderTextfieldView, 13, "身份")
-        // city text field
-        cityTextfieldView.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(cityTextfieldView)
-        commonSetupForTextfieldView(cityTextfieldView, statusTextfieldView, 13, "所在城市")
+    func setupCollectionView() {
+        //初始化Collection View
+        initCollectionView()
+        
+        //注册tap点击事件
+        //        let tapRecognizer = UITapGestureRecognizer(target: self,
+        //                                                   action: #selector(ViewController.handleTap(_:)))
+        //        collectionView.addGestureRecognizer(tapRecognizer)
     }
     
-    func commonSetupForTextfieldView(_ view: WWTextFieldView, _ topView: UIView, _ topGap: CGFloat, _ text: String) {
-        view.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainerView.addSubview(view)
-        view.snp.makeConstraints { (make) in
-            make.height.equalTo(textfieldViewHeight)
-            make.top.equalTo(topView.snp.bottom).offset(topGap)
-            make.left.equalTo(scrollContainerView.snp.left).offset(margin)
-            make.right.equalTo(scrollContainerView.snp.right).offset(-margin)
-        }
-        let attString = NSAttributedString(string: text,
-                                           attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor1,
-                                                        NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
-        view.iconView.image = UIImage(named: "back_button")
-        view.textfield.attributedPlaceholder = attString
-        view.textfield.textColor = wwTheme.fontColor4
-        view.textfield.font = UIFont.systemFont(ofSize: 14)
-    }
-   
-    func setupButton() {
+    func setupButtons() {
         previousButton.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(previousButton)
         previousButton.snp.makeConstraints { (make) in
             make.height.equalTo(45)
             make.left.equalTo(scrollContainerView.snp.left).offset(margin)
             make.right.equalTo(scrollContainerView.snp.right).offset(-margin)
-            buttonTopConstraint = make.top.equalTo(cityTextfieldView.snp.bottom).offset(buttonsTopGap).constraint
-           
+            buttonTopConstraint = make.top.equalTo(collectionView.snp.bottom).offset(buttonsTopGap).constraint
+            
         }
         let attString = NSAttributedString(string: "上一步",
                                            attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor2,
@@ -152,7 +122,7 @@ class WWRegisterTwoViewController: WWScrollViewController {
             make.top.equalTo(previousButton.snp.bottom).offset(20)
             make.bottom.equalTo(scrollContainerView.snp.bottom).offset(-20)
         }
-        let attStringNS = NSAttributedString(string: "下一步",
+        let attStringNS = NSAttributedString(string: "去主页",
                                              attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor3,
                                                           NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)])
         nextStepButton.setAttributedTitle(attStringNS, for: UIControlState())
@@ -161,5 +131,71 @@ class WWRegisterTwoViewController: WWScrollViewController {
         nextStepButton.layer.masksToBounds = true
         nextStepButton.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
     }
+    
+    private func initCollectionView() {
+        //初始化自定义布局
+        loopLayout = LoopCollectionViewLayout()
+        
+        //初始化Collection View
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: loopLayout)
+        
+        //Collection View代理设置
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = .white
+        //注册重用的单元格
+        let cellXIB = UINib.init(nibName: "RegisterLoopCell", bundle: Bundle.main)
+        collectionView.register(cellXIB, forCellWithReuseIdentifier: CellIdentifier)
+        
+        //将Collection View添加到主视图中
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        scrollContainerView.addSubview(collectionView)
+        collectionView.snp.makeConstraints { (make) in
+            make.height.equalTo(collectionViewHeight)
+            make.left.equalTo(scrollContainerView.snp.left)
+            make.right.equalTo(scrollContainerView.snp.right)
+            make.top.equalTo(titleView.snp.bottom).offset(collectionViewTopGap)
+        }
+    }
+
+
+}
+
+//Collection View数据源协议相关方法
+extension WWRegisterThreeViewController: UICollectionViewDataSource {
+    //获取分区数
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    //获取每个分区里单元格数量
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return texts.count
+    }
+    
+    //返回每个单元格视图
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //获取重用的单元格
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+            CellIdentifier, for: indexPath) as! RegisterLoopCell
+        //设置内部显示的图片
+        cell.imageView.image = UIImage(named: "back_button")
+        cell.titleLabel.text = texts[indexPath.row]
+        cell.titleLabel.font = UIFont.systemFont(ofSize: 14)
+        cell.titleLabel.textColor = wwTheme.fontColor4
+        //设置遮罩
+        cell.layer.masksToBounds = true
+        //设置圆角半径(宽度的一半)，显示成圆形。
+        cell.layer.cornerRadius = cell.bounds.width/2
+        cell.backgroundColor = wwTheme.fontColor5
+        return cell
+    }
+    
+}
+
+//Collection View样式布局协议相关方法
+extension WWRegisterThreeViewController: UICollectionViewDelegate {
     
 }

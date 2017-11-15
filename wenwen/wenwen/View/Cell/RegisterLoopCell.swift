@@ -1,0 +1,21 @@
+//
+//  RegisterLoopCell.swift
+//  wenwen
+//
+//  Created by Wei Zhang on 2017/11/15.
+//  Copyright © 2017年 wenwenkeji. All rights reserved.
+//
+
+import UIKit
+
+class RegisterLoopCell: UICollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+}

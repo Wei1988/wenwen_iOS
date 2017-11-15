@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		46944BD2702FC58FFA853372 /* Pods_wenwen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */; };
 		BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */; };
+		BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53BA1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift */; };
+		BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53BC1FBC424000EA8031 /* LoopCollectionViewLayout.swift */; };
+		BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */; };
+		BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 		13A6B2E58B4A77EDE31B91A0 /* Pods-wenwen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wenwen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wenwen/Pods-wenwen.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2EDFDD2825DE01E76B06D5 /* Pods-wenwen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wenwen.release.xcconfig"; path = "Pods/Target Support Files/Pods-wenwen/Pods-wenwen.release.xcconfig"; sourceTree = "<group>"; };
 		BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterTwoViewController.swift; sourceTree = "<group>"; };
+		BF1F53BA1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterThreeViewController.swift; sourceTree = "<group>"; };
+		BF1F53BC1FBC424000EA8031 /* LoopCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopCollectionViewLayout.swift; sourceTree = "<group>"; };
+		BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoopCell.swift; sourceTree = "<group>"; };
+		BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterLoopCell.xib; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +100,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF1F53BE1FBC42E000EA8031 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */,
+				BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		BF6EA03A1FB7007E00B49A85 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,7 @@
 		BF6EA0671FB701BC00B49A85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F53BE1FBC42E000EA8031 /* Cell */,
 				BF784F071FB731660008DC38 /* Common */,
 			);
 			path = View;
@@ -192,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				BF784F051FB731620008DC38 /* WWTextFieldView.swift */,
+				BF1F53BC1FBC424000EA8031 /* LoopCollectionViewLayout.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -201,6 +220,7 @@
 			children = (
 				BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */,
 				BF03650C1FBAF29100C0D670 /* WWRegisterTwoViewController.swift */,
+				BF1F53BA1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -291,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */,
 				BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */,
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
 				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
@@ -385,8 +406,11 @@
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
 				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
+				BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */,
+				BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
+				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
 				BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */,

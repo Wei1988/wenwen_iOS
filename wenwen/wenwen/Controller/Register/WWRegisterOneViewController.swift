@@ -45,12 +45,12 @@ class WWRegisterOneViewController: WWScrollViewController {
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationController?.navigationBar.shadowImage = nil
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+////        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+////        self.navigationController?.navigationBar.shadowImage = nil
+//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+//    }
     // MARK: - Button Actions
     @objc func nextStepButtonClicked() {
         let vc = WWRegisterTwoViewController()

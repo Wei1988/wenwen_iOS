@@ -19,6 +19,7 @@ final class WWTextFieldView: UIView {
     // UI Items
     let iconView = UIImageView()
     let textfield = UITextField()
+    let rightArrowView = UIImageView()
     
     convenience init(_ hasRightArrow: Bool) {
         self.init()
@@ -26,10 +27,10 @@ final class WWTextFieldView: UIView {
         self.layer.borderColor = wwTheme.fontColor1.cgColor
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
-        setupAndLayout()
+        setupAndLayout(hasRightArrow)
     }
     
-    func setupAndLayout() {
+    func setupAndLayout(_ hasRightArrow: Bool) {
         self.translatesAutoresizingMaskIntoConstraints = false
         // icon
         iconView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,5 +52,20 @@ final class WWTextFieldView: UIView {
             textFieldRightConstraint = make.right.equalTo(self.snp.right).constraint
         }
         textfield.clearButtonMode = .whileEditing
+        // right arrow
+        if !hasRightArrow {
+            return
+        }
+        rightArrowView.image = UIImage(named: "back_button")
+        rightArrowView.contentMode = .scaleAspectFit
+        self.addSubview(rightArrowView)
+        rightArrowView.snp.makeConstraints { (make) in
+            make.width.equalTo(iconWidth)
+            make.height.equalTo(iconHeight)
+            make.right.equalTo(self.snp.right).offset(-10)
+            make.centerY.equalTo(self.snp.centerY)
+        }
+        textFieldRightConstraint?.update(offset: -iconWidth-8)
+        textfield.clearButtonMode = .never
     }
 }
