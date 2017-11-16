@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "back_button@1x.png",
       "scale" : "1x"
     },
     {

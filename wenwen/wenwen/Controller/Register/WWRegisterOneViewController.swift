@@ -57,6 +57,11 @@ class WWRegisterOneViewController: WWScrollViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @objc func loginButtonClicked() {
+        let vc = WWLoginViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func setupAndLayout() {
         setuptitleLabel()
@@ -100,7 +105,7 @@ class WWRegisterOneViewController: WWScrollViewController {
         let attString = NSAttributedString(string: "请输入手机号",
                                      attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor1,
                                                   NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
-        phoneTextfieldView.iconView.image = UIImage(named: "back_button")
+        phoneTextfieldView.iconView.image = UIImage(named: "phone")
         phoneTextfieldView.textfield.attributedPlaceholder = attString
         phoneTextfieldView.textfield.textColor = wwTheme.fontColor4
         phoneTextfieldView.textfield.font = UIFont.systemFont(ofSize: 14)
@@ -118,7 +123,7 @@ class WWRegisterOneViewController: WWScrollViewController {
         let attString = NSAttributedString(string: "请输入验证码",
                                            attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor1,
                                                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
-        captchaTextfieldView.iconView.image = UIImage(named: "back_button")
+        captchaTextfieldView.iconView.image = UIImage(named: "yanzheng")
         captchaTextfieldView.textfield.attributedPlaceholder = attString
         captchaTextfieldView.textfield.textColor = wwTheme.fontColor4
         captchaTextfieldView.textfield.font = UIFont.systemFont(ofSize: 14)
@@ -159,7 +164,7 @@ class WWRegisterOneViewController: WWScrollViewController {
         let attString = NSAttributedString(string: "请设置密码",
                                            attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor1,
                                                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
-        passwordTextfieldView.iconView.image = UIImage(named: "back_button")
+        passwordTextfieldView.iconView.image = UIImage(named: "password")
         passwordTextfieldView.textfield.attributedPlaceholder = attString
         passwordTextfieldView.textfield.textColor = wwTheme.fontColor4
         passwordTextfieldView.textfield.font = UIFont.systemFont(ofSize: 14)
@@ -205,6 +210,7 @@ class WWRegisterOneViewController: WWScrollViewController {
         loginButton.layer.borderWidth = 1
         loginButton.layer.cornerRadius = 8
         loginButton.layer.masksToBounds = true
+        loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         // next step button
         nextStepButton.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(nextStepButton)

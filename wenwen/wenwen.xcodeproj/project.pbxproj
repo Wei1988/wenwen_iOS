@@ -13,6 +13,7 @@
 		BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53BC1FBC424000EA8031 /* LoopCollectionViewLayout.swift */; };
 		BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */; };
 		BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */; };
+		BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		BF1F53BC1FBC424000EA8031 /* LoopCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopCollectionViewLayout.swift; sourceTree = "<group>"; };
 		BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoopCell.swift; sourceTree = "<group>"; };
 		BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterLoopCell.xib; sourceTree = "<group>"; };
+		BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLoginViewController.swift; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		BF1F53C51FBC81A900EA8031 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		BF6EA03A1FB7007E00B49A85 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		BF6EA0681FB701C100B49A85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F53C51FBC81A900EA8031 /* Login */,
 				BF784F0A1FB732400008DC38 /* Register */,
 				BF784F041FB70A2D0008DC38 /* Base */,
 			);
@@ -402,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */,
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,

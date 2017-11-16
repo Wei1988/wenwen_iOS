@@ -12,7 +12,7 @@ import SnapKit
 
 final class WWTextFieldView: UIView {
     // constants
-    let iconWidth: CGFloat = 10
+    let iconWidth: CGFloat = 20
     let iconHeight: CGFloat = 18
     // properties
     var textFieldRightConstraint: Constraint?
@@ -48,7 +48,7 @@ final class WWTextFieldView: UIView {
         textfield.snp.makeConstraints { (make) in
             make.left.equalTo(iconView.snp.right).offset(12)
             make.bottom.equalTo(self.snp.bottom)
-            make.top.equalTo(self.snp.top)
+            make.top.equalTo(self.snp.top).offset(2)
             textFieldRightConstraint = make.right.equalTo(self.snp.right).constraint
         }
         textfield.clearButtonMode = .whileEditing
