@@ -70,6 +70,7 @@ class WWRegisterOneViewController: WWScrollViewController {
         setupPasswordTextfieldView()
         setupPolicyView()
         setupAndLayoutBottomButtons()
+        setupBgImageView()
     }
     
     func setuptitleLabel() {
@@ -229,5 +230,19 @@ class WWRegisterOneViewController: WWScrollViewController {
         nextStepButton.layer.cornerRadius = 8
         nextStepButton.layer.masksToBounds = true
         nextStepButton.addTarget(self, action: #selector(nextStepButtonClicked), for: .touchUpInside)
+    }
+    
+    func setupBgImageView() {
+        let bgImageView = UIImageView()
+        bgImageView.translatesAutoresizingMaskIntoConstraints = false
+        scrollContainerView.addSubview(bgImageView)
+        bgImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(scrollContainerView.snp.left)
+            make.right.equalTo(scrollContainerView.snp.right)
+            make.bottom.equalTo(scrollContainerView.snp.bottom)
+        }
+        bgImageView.contentMode = .scaleAspectFit
+        bgImageView.image = UIImage(named: "loginBG")
+        
     }
 }

@@ -24,7 +24,7 @@ class WWRegisterThreeViewController: WWScrollViewController {
     private let nextStepButton = UIButton()
     private let previousButton = UIButton()
     // 模拟数据
-    private let texts: [String] = ["抑郁症", "中医养生", "其他", "癌症", "艾滋", "白血病", "糖尿病"]
+    private let images: [String] = ["yiyu", "yangsheng", "qita", "aizheng", "aizi", "baixue", "tangniao"]
     //自定义的环形布局
     var loopLayout:LoopCollectionViewLayout!
     private var collectionView:UICollectionView!
@@ -171,7 +171,7 @@ extension WWRegisterThreeViewController: UICollectionViewDataSource {
     //获取每个分区里单元格数量
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return texts.count
+        return images.count
     }
     
     //返回每个单元格视图
@@ -181,10 +181,10 @@ extension WWRegisterThreeViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
             CellIdentifier, for: indexPath) as! RegisterLoopCell
         //设置内部显示的图片
-        cell.imageView.image = UIImage(named: "back_button")
-        cell.titleLabel.text = texts[indexPath.row]
-        cell.titleLabel.font = UIFont.systemFont(ofSize: 14)
-        cell.titleLabel.textColor = wwTheme.fontColor4
+        cell.imageView.image = UIImage(named: images[indexPath.row])
+//        cell.titleLabel.text = texts[indexPath.row]
+//        cell.titleLabel.font = UIFont.systemFont(ofSize: 14)
+//        cell.titleLabel.textColor = wwTheme.fontColor4
         //设置遮罩
         cell.layer.masksToBounds = true
         //设置圆角半径(宽度的一半)，显示成圆形。

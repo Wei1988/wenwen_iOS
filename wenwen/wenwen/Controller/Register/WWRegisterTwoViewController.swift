@@ -87,26 +87,26 @@ class WWRegisterTwoViewController: WWScrollViewController {
         // name text field
         nameTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(nameTextfieldView)
-        commonSetupForTextfieldView(nameTextfieldView, titleView, 90, "昵称")
+        commonSetupForTextfieldView(nameTextfieldView, titleView, 90, "昵称", "nicheng")
         // birthday text field
         birthdayTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(birthdayTextfieldView)
-        commonSetupForTextfieldView(birthdayTextfieldView, nameTextfieldView, 13, "生日")
+        commonSetupForTextfieldView(birthdayTextfieldView, nameTextfieldView, 13, "生日", "shengri")
         // gender text field
         genderTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(genderTextfieldView)
-        commonSetupForTextfieldView(genderTextfieldView, birthdayTextfieldView, 13, "性别")
+        commonSetupForTextfieldView(genderTextfieldView, birthdayTextfieldView, 13, "性别", "xingbie")
         // status text field
         statusTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(statusTextfieldView)
-        commonSetupForTextfieldView(statusTextfieldView, genderTextfieldView, 13, "身份")
+        commonSetupForTextfieldView(statusTextfieldView, genderTextfieldView, 13, "身份", "shenfen")
         // city text field
         cityTextfieldView.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(cityTextfieldView)
-        commonSetupForTextfieldView(cityTextfieldView, statusTextfieldView, 13, "所在城市")
+        commonSetupForTextfieldView(cityTextfieldView, statusTextfieldView, 13, "所在城市", "city")
     }
     
-    func commonSetupForTextfieldView(_ view: WWTextFieldView, _ topView: UIView, _ topGap: CGFloat, _ text: String) {
+    func commonSetupForTextfieldView(_ view: WWTextFieldView, _ topView: UIView, _ topGap: CGFloat, _ text: String, _ imageName: String) {
         view.translatesAutoresizingMaskIntoConstraints = false
         scrollContainerView.addSubview(view)
         view.snp.makeConstraints { (make) in
@@ -118,7 +118,7 @@ class WWRegisterTwoViewController: WWScrollViewController {
         let attString = NSAttributedString(string: text,
                                            attributes: [NSAttributedStringKey.foregroundColor: wwTheme.fontColor1,
                                                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
-        view.iconView.image = UIImage(named: "back_button")
+        view.iconView.image = UIImage(named: imageName)
         view.textfield.attributedPlaceholder = attString
         view.textfield.textColor = wwTheme.fontColor4
         view.textfield.font = UIFont.systemFont(ofSize: 14)

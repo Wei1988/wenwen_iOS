@@ -35,6 +35,7 @@ class WWLoginViewController: WWScrollViewController {
     private let qqImageView = UIImageView()
     private let wechatImageView = UIImageView()
     private let weiboImageView = UIImageView()
+    private let bgImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ class WWLoginViewController: WWScrollViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+textfieldViewTopGap+93+30+buttonTopGap+buttonHeight+170+20+50+46+20)-40
+        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+textfieldViewTopGap+93+30+buttonTopGap+buttonHeight+170+20+30+46+20)-40
         buttonTopConstraint?.update(offset: 170 + gap)
     }
     
@@ -55,6 +56,7 @@ class WWLoginViewController: WWScrollViewController {
         setupLabels()
         setupButtons()
         setupBottomViews()
+        setupBgImageView()
     }
     
     // MARK: - Button actions
@@ -254,7 +256,7 @@ class WWLoginViewController: WWScrollViewController {
         qqImageView.snp.makeConstraints { (make) in
             make.left.equalTo(scrollContainerView.snp.left).offset(36)
             make.width.height.equalTo(46)
-            make.top.equalTo(labelView.snp.bottom).offset(50)
+            make.top.equalTo(labelView.snp.bottom).offset(30)
             make.bottom.equalTo(scrollContainerView.snp.bottom).offset(-20)
         }
         qqImageView.image = UIImage.init(named: "QQ")
@@ -264,7 +266,7 @@ class WWLoginViewController: WWScrollViewController {
         weiboImageView.snp.makeConstraints { (make) in
             make.right.equalTo(scrollContainerView.snp.right).offset(-36)
             make.width.height.equalTo(46)
-            make.top.equalTo(labelView.snp.bottom).offset(50)
+            make.top.equalTo(labelView.snp.bottom).offset(30)
             make.bottom.equalTo(scrollContainerView.snp.bottom).offset(-20)
         }
         weiboImageView.image = UIImage(named: "sina")
@@ -274,13 +276,24 @@ class WWLoginViewController: WWScrollViewController {
         wechatImageView.snp.makeConstraints { (make) in
             make.centerX.equalTo(scrollContainerView.snp.centerX)
             make.width.height.equalTo(46)
-            make.top.equalTo(labelView.snp.bottom).offset(50)
+            make.top.equalTo(labelView.snp.bottom).offset(30)
             make.bottom.equalTo(scrollContainerView.snp.bottom).offset(-20)
         }
         wechatImageView.image = UIImage(named: "wechat")
     }
     
-    
+    func setupBgImageView() {
+        bgImageView.translatesAutoresizingMaskIntoConstraints = false
+        scrollContainerView.addSubview(bgImageView)
+        bgImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(scrollContainerView.snp.left)
+            make.right.equalTo(scrollContainerView.snp.right)
+            make.bottom.equalTo(scrollContainerView.snp.bottom)
+        }
+        bgImageView.contentMode = .scaleAspectFit
+        bgImageView.image = UIImage(named: "loginBG")
+        
+    }
     
     
     

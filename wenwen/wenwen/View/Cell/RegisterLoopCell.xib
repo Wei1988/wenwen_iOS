@@ -19,27 +19,18 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-kh-JH0">
-                        <rect key="frame" x="24" y="15" width="38" height="31"/>
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVX-dt-AaX">
-                        <rect key="frame" x="22" y="51" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZeO-kh-JH0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="BWQ-eU-JKr"/>
-                <constraint firstAttribute="bottom" secondItem="RVX-dt-AaX" secondAttribute="bottom" constant="14" id="DCU-CL-Juf"/>
-                <constraint firstItem="RVX-dt-AaX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IXc-pE-209"/>
-                <constraint firstAttribute="trailing" secondItem="ZeO-kh-JH0" secondAttribute="trailing" constant="24" id="IYr-oL-AAI"/>
-                <constraint firstItem="RVX-dt-AaX" firstAttribute="top" secondItem="ZeO-kh-JH0" secondAttribute="bottom" constant="5" id="LkS-aZ-BSm"/>
-                <constraint firstItem="ZeO-kh-JH0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="ggf-Gu-0Kf"/>
+                <constraint firstItem="ZeO-kh-JH0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dpq-vx-dTO"/>
+                <constraint firstAttribute="bottom" secondItem="ZeO-kh-JH0" secondAttribute="bottom" id="tlK-zZ-dT6"/>
+                <constraint firstAttribute="trailing" secondItem="ZeO-kh-JH0" secondAttribute="trailing" id="uDy-Gs-6or"/>
+                <constraint firstItem="ZeO-kh-JH0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vt1-lN-sCa"/>
             </constraints>
             <connections>
                 <outlet property="imageView" destination="ZeO-kh-JH0" id="ApW-la-Ne1"/>
-                <outlet property="titleLabel" destination="RVX-dt-AaX" id="7tJ-Pb-KWk"/>
             </connections>
             <point key="canvasLocation" x="38" y="69"/>
         </collectionViewCell>

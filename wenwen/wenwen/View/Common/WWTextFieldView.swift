@@ -13,7 +13,7 @@ import SnapKit
 final class WWTextFieldView: UIView {
     // constants
     let iconWidth: CGFloat = 20
-    let iconHeight: CGFloat = 18
+    let iconHeight: CGFloat = 20
     // properties
     var textFieldRightConstraint: Constraint?
     // UI Items
@@ -48,7 +48,7 @@ final class WWTextFieldView: UIView {
         textfield.snp.makeConstraints { (make) in
             make.left.equalTo(iconView.snp.right).offset(12)
             make.bottom.equalTo(self.snp.bottom)
-            make.top.equalTo(self.snp.top).offset(2)
+            make.top.equalTo(self.snp.top).offset(4)
             textFieldRightConstraint = make.right.equalTo(self.snp.right).constraint
         }
         textfield.clearButtonMode = .whileEditing
@@ -56,12 +56,12 @@ final class WWTextFieldView: UIView {
         if !hasRightArrow {
             return
         }
-        rightArrowView.image = UIImage(named: "back_button")
+        rightArrowView.image = UIImage(named: "xiala")
         rightArrowView.contentMode = .scaleAspectFit
         self.addSubview(rightArrowView)
         rightArrowView.snp.makeConstraints { (make) in
-            make.width.equalTo(iconWidth)
-            make.height.equalTo(iconHeight)
+            make.width.equalTo(15)
+            make.height.equalTo(15)
             make.right.equalTo(self.snp.right).offset(-10)
             make.centerY.equalTo(self.snp.centerY)
         }
