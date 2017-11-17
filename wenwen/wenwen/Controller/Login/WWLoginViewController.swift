@@ -61,7 +61,9 @@ class WWLoginViewController: WWScrollViewController {
     
     // MARK: - Button actions
     @objc func loginButtonClicked() {
-        
+        let vc = WWHomeTabBarViewController()
+        UIApplication.shared.keyWindow?.rootViewController = vc
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func registerButtonClicked() {

@@ -60,8 +60,9 @@ class WWRegisterThreeViewController: WWScrollViewController {
     }
     
     @objc func nextButtonClicked() {
-        let vc = WWRegisterThreeViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = WWHomeTabBarViewController()
+        UIApplication.shared.keyWindow?.rootViewController = vc
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func setupTitleView() {

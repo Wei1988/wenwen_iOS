@@ -14,6 +14,12 @@
 		BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */; };
 		BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */; };
 		BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */; };
+		BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C91FBDCAF000EA8031 /* WWHomeTabBarViewController.swift */; };
+		BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */; };
+		BF1F53D01FBDD28900EA8031 /* WWCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */; };
+		BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */; };
+		BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */; };
+		BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -47,6 +53,12 @@
 		BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoopCell.swift; sourceTree = "<group>"; };
 		BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterLoopCell.xib; sourceTree = "<group>"; };
 		BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLoginViewController.swift; sourceTree = "<group>"; };
+		BF1F53C91FBDCAF000EA8031 /* WWHomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWHomeTabBarViewController.swift; sourceTree = "<group>"; };
+		BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWFriendListViewController.swift; sourceTree = "<group>"; };
+		BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCircleViewController.swift; sourceTree = "<group>"; };
+		BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWChatViewController.swift; sourceTree = "<group>"; };
+		BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWOverseaTreatmentViewController.swift; sourceTree = "<group>"; };
+		BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeViewController.swift; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +131,54 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		BF1F53C81FBDCA5D00EA8031 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53C91FBDCAF000EA8031 /* WWHomeTabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		BF1F53CB1FBDD0D900EA8031 /* FriendListTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */,
+			);
+			path = FriendListTab;
+			sourceTree = "<group>";
+		};
+		BF1F53CE1FBDD21900EA8031 /* CircleTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */,
+			);
+			path = CircleTab;
+			sourceTree = "<group>";
+		};
+		BF1F53D11FBDD29300EA8031 /* ChatTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */,
+			);
+			path = ChatTab;
+			sourceTree = "<group>";
+		};
+		BF1F53D41FBDD3FB00EA8031 /* OverseaTreatmentTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */,
+			);
+			path = OverseaTreatmentTab;
+			sourceTree = "<group>";
+		};
+		BF1F53D71FBDD45500EA8031 /* MeTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */,
+			);
+			path = MeTab;
+			sourceTree = "<group>";
+		};
 		BF6EA03A1FB7007E00B49A85 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +241,12 @@
 		BF6EA0681FB701C100B49A85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F53D71FBDD45500EA8031 /* MeTab */,
+				BF1F53D41FBDD3FB00EA8031 /* OverseaTreatmentTab */,
+				BF1F53D11FBDD29300EA8031 /* ChatTab */,
+				BF1F53CE1FBDD21900EA8031 /* CircleTab */,
+				BF1F53CB1FBDD0D900EA8031 /* FriendListTab */,
+				BF1F53C81FBDCA5D00EA8031 /* TabBarController */,
 				BF1F53C51FBC81A900EA8031 /* Login */,
 				BF784F0A1FB732400008DC38 /* Register */,
 				BF784F041FB70A2D0008DC38 /* Base */,
@@ -416,15 +482,21 @@
 				BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */,
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
+				BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
 				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
 				BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */,
+				BF1F53D01FBDD28900EA8031 /* WWCircleViewController.swift in Sources */,
 				BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
+				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
+				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
+				BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */,
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
+				BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */,
 				BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

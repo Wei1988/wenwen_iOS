@@ -102,13 +102,16 @@ class WWTableViewController: UITableViewController, UIGestureRecognizerDelegate 
     }
     
     func configNavigationItem() {
-        let backButton = UIButton()
-        backButton.setImage(#imageLiteral(resourceName: "back_button"), for: .normal)
-        backButton.sizeToFit()
-        backButton.frame.size.width = 30
-        backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -18, bottom: 0, right: 0)
-        backButton.addTarget(self, action: #selector(backClicked), for: .touchUpInside)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        if let vclist = self.navigationController?.viewControllers,
+            vclist.count > 1 {
+            let backButton = UIButton()
+            backButton.setImage(#imageLiteral(resourceName: "back_button"), for: .normal)
+            backButton.sizeToFit()
+            backButton.frame.size.width = 30
+            backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -18, bottom: 0, right: 0)
+            backButton.addTarget(self, action: #selector(backClicked), for: .touchUpInside)
+            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        }
     }
     
     // MARK: - UIGestureRecognizerDelegate
