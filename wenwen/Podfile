@@ -13,4 +13,5 @@ target 'wenwen' do
     pod 'YYCache', '~> 1.0'
     pod 'YYCategories'
     pod 'SVProgressHUD'
+    pod 'iCarousel'
 end

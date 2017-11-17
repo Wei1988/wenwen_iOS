@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "iCarousel.h"
 
-FOUNDATION_EXPORT double EZSwiftExtensionsVersionNumber;
-FOUNDATION_EXPORT const unsigned char EZSwiftExtensionsVersionString[];
+FOUNDATION_EXPORT double iCarouselVersionNumber;
+FOUNDATION_EXPORT const unsigned char iCarouselVersionString[];
 

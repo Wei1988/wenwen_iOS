@@ -75,6 +75,7 @@
 		BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterOneViewController.swift; sourceTree = "<group>"; };
 		BF784F0B1FB733930008DC38 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownHandler.swift; sourceTree = "<group>"; };
+		BFFE76131FBF236000E5D472 /* Wenwen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wenwen-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wenwen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -260,6 +261,7 @@
 				BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */,
 				BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */,
 				BF6EA0521FB7007E00B49A85 /* Info.plist */,
+				BFFE76131FBF236000E5D472 /* Wenwen-Bridging-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -454,6 +456,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -466,6 +469,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -650,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/weis/问问科技/wenwen_iOS/wenwen/wenwen/Resource/Wenwen-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,6 +672,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenwenT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/weis/问问科技/wenwen_iOS/wenwen/wenwen/Resource/Wenwen-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

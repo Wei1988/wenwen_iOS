@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '57B275BF6168E38703261D48966BA1BA'
-               BlueprintName = 'EZSwiftExtensions'
+               BlueprintIdentifier = 'B8D8C363B343A0778AE6633D70E11749'
+               BlueprintName = 'iCarousel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'EZSwiftExtensions.framework'>
+               BuildableName = 'iCarousel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
