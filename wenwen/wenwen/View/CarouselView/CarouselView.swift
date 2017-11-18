@@ -54,24 +54,5 @@ final class CarouselView: UIView {
         label.textAlignment = .center
         label.textColor = wwTheme.fontColor7
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

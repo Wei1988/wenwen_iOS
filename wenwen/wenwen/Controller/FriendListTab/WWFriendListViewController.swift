@@ -112,26 +112,23 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             make.centerY.equalTo(imageView.snp.bottom)
             make.height.equalTo(WWSpecs.windowWidth()/3+20)
         }
-//        iCarouselView.backgroundColor = .red
         return containerView
     }
 
     
     // MARK: - iCarousel Datasource and Delegate methods
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 4
+        return 2
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         var iCarouselView = view as? CarouselView
         if iCarouselView == nil {
             iCarouselView = CarouselView.init(frame: CGRect.init(x: 0, y: 0, width: WWSpecs.windowWidth()/3, height: WWSpecs.windowWidth()/3))
+            
         }
-//        let test = iCarouselView as! UIImageView
-//        test.image = UIImage(named: "splash")
         iCarouselView!.imageView.image = UIImage(named: "splash")
         iCarouselView!.label.text = "癌症"
-//        iCarouselView?.backgroundColor = .yellow
         return iCarouselView!
     }
     
