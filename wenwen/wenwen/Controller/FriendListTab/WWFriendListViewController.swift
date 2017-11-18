@@ -118,13 +118,13 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     
     // MARK: - iCarousel Datasource and Delegate methods
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 2
+        return 6
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         var iCarouselView = view as? CarouselView
         if iCarouselView == nil {
-            iCarouselView = CarouselView.init(frame: CGRect.init(x: 0, y: 0, width: WWSpecs.windowWidth()/3, height: WWSpecs.windowWidth()/3))
+            iCarouselView = CarouselView.init(frame: CGRect.init(x: 0, y: 0, width: WWSpecs.windowWidth()/3-20, height: WWSpecs.windowWidth()/3+10))
             
         }
         iCarouselView!.imageView.image = UIImage(named: "splash")
@@ -144,7 +144,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         } else {
             newTransform = CATransform3DScale(newTransform, min_scale, min_scale, 1);
         }
-        return CATransform3DTranslate(newTransform, offset * (WWSpecs.windowWidth()/3) * 1.3, 0.0, 0.0);
+        return CATransform3DTranslate(newTransform, offset * (WWSpecs.windowWidth()/3-20) * 1.4, 0.0, 0.0);
     }
     
 
