@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterLoopCell: UICollectionViewCell {
+final class RegisterLoopCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
 

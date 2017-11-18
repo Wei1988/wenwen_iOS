@@ -32,6 +32,7 @@
 		BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */; };
 		BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0B1FB733930008DC38 /* GCDHelper.swift */; };
 		BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */; };
+		BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE76181FC01E3B00E5D472 /* CarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BF784F0B1FB733930008DC38 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownHandler.swift; sourceTree = "<group>"; };
 		BFFE76131FBF236000E5D472 /* Wenwen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wenwen-Bridging-Header.h"; sourceTree = "<group>"; };
+		BFFE76181FC01E3B00E5D472 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		ED6093E4290654E6F27E2ABF /* Pods_wenwen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wenwen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -233,6 +235,7 @@
 		BF6EA0671FB701BC00B49A85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFFE76171FC01E1000E5D472 /* CarouselView */,
 				BF1F53BE1FBC42E000EA8031 /* Cell */,
 				BF784F071FB731660008DC38 /* Common */,
 			);
@@ -247,10 +250,10 @@
 				BF1F53D11FBDD29300EA8031 /* ChatTab */,
 				BF1F53CE1FBDD21900EA8031 /* CircleTab */,
 				BF1F53CB1FBDD0D900EA8031 /* FriendListTab */,
-				BF1F53C81FBDCA5D00EA8031 /* TabBarController */,
 				BF1F53C51FBC81A900EA8031 /* Login */,
 				BF784F0A1FB732400008DC38 /* Register */,
 				BF784F041FB70A2D0008DC38 /* Base */,
+				BF1F53C81FBDCA5D00EA8031 /* TabBarController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,14 @@
 				BF1F53BA1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		BFFE76171FC01E1000E5D472 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				BFFE76181FC01E3B00E5D472 /* CarouselView.swift */,
+			);
+			path = CarouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +504,7 @@
 				BF1F53D01FBDD28900EA8031 /* WWCircleViewController.swift in Sources */,
 				BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
+				BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */,
 				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,

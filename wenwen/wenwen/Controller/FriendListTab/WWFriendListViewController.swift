@@ -9,12 +9,24 @@
 import UIKit
 import iCarousel
 
-class WWFriendListViewController: WWTableViewController {
+class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iCarouselDelegate {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        configRightBarItem()
+    }
+    
+    func configRightBarItem() {
+        let button = UIButton()
+        button.setImage(#imageLiteral(resourceName: "filter"), for: .normal)
+        button.frame.size.width = 30
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -18, bottom: 0, right: 0)
+//        button.addTarget(self, action: #selector(backClicked), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +34,10 @@ class WWFriendListViewController: WWTableViewController {
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.barTintColor = wwTheme.fontColor6
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.white,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
+            ]
         UIApplication.shared.statusBarStyle = .lightContent
     }
     
@@ -59,7 +75,7 @@ class WWFriendListViewController: WWTableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = setupHeaderView()
-        headerView.backgroundColor = .yellow
+//        headerView.backgroundColor = .gray
         return headerView
     }
     
@@ -73,17 +89,66 @@ class WWFriendListViewController: WWTableViewController {
         imageView.snp.makeConstraints { (make) in
             make.left.equalTo(containerView.snp.left)
             make.right.equalTo(containerView.snp.right)
-            make.top.equalTo(containerView.snp.top).offset(-20)
-            make.bottom.equalTo(containerView.snp.bottom).offset(-70)
+            make.top.equalTo(containerView.snp.top).offset(-64)
+            make.height.equalTo(160)
         }
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage.init(named: "bg_home")
-        //
+//        imageView.backgroundColor = .yellow
+        // iCarousel view
+        let iCarouselView = iCarousel()
+        iCarouselView.dataSource = self
+        iCarouselView.delegate = self
+        iCarouselView.bounces = false
+        iCarouselView.isPagingEnabled = true
+        iCarouselView.type = .custom
+        iCarouselView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(iCarouselView)
+        iCarouselView.snp.makeConstraints { (make) in
+            make.left.equalTo(containerView.snp.left)
+            make.right.equalTo(containerView.snp.right)
+            make.bottom.equalTo(containerView.snp.bottom).offset(-10)
+//            make.top.equalTo(imageView.snp.bottom).offset(-WWSpecs.windowWidth()/6)
+            make.centerY.equalTo(imageView.snp.bottom)
+            make.height.equalTo(WWSpecs.windowWidth()/3+20)
+        }
+//        iCarouselView.backgroundColor = .red
         return containerView
     }
 
     
-
+    // MARK: - iCarousel Datasource and Delegate methods
+    func numberOfItems(in carousel: iCarousel) -> Int {
+        return 4
+    }
+    
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        var iCarouselView = view as? CarouselView
+        if iCarouselView == nil {
+            iCarouselView = CarouselView.init(frame: CGRect.init(x: 0, y: 0, width: WWSpecs.windowWidth()/3, height: WWSpecs.windowWidth()/3))
+        }
+//        let test = iCarouselView as! UIImageView
+//        test.image = UIImage(named: "splash")
+        iCarouselView!.imageView.image = UIImage(named: "splash")
+        iCarouselView!.label.text = "癌症"
+//        iCarouselView?.backgroundColor = .yellow
+        return iCarouselView!
+    }
+    
+    func carousel(_ carousel: iCarousel, itemTransformForOffset offset: CGFloat, baseTransform transform: CATransform3D) -> CATransform3D {
+        var newTransform = transform
+        let max_scale: CGFloat = 1.0
+        let min_scale: CGFloat = 0.8
+        if offset <= 1 && offset >= -1 {
+            let tempScale = offset < 0 ? 1+offset : 1-offset;
+            let slope = (max_scale - min_scale) / 1;
+            let scale = min_scale + slope*tempScale;
+            newTransform = CATransform3DScale(newTransform, scale, scale, 1);
+        } else {
+            newTransform = CATransform3DScale(newTransform, min_scale, min_scale, 1);
+        }
+        return CATransform3DTranslate(newTransform, offset * (WWSpecs.windowWidth()/3) * 1.3, 0.0, 0.0);
+    }
     
 
     

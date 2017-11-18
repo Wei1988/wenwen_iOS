@@ -22,7 +22,7 @@ struct Theme {
     let fontColor5: UIColor
     /// #54D4D2
     let fontColor6: UIColor
-    /// CCC
+    /// 8C8A8C
     let fontColor7: UIColor
     /// blue
     let fontColor8: UIColor
@@ -81,7 +81,7 @@ let wwTheme = Theme(fontColor1: WWSpecs.colorFromHex("A6A6A6", alpha: 1),
                     fontColor4: WWSpecs.colorFromHex("333333", alpha: 1),
                     fontColor5: WWSpecs.colorFromHex("D8F4F4", alpha: 1),
                     fontColor6: WWSpecs.colorFromHex("54D4D2", alpha: 1),
-                    fontColor7: WWSpecs.colorFromHex("CCCCCC", alpha: 1),
+                    fontColor7: WWSpecs.colorFromHex("8C8A8C", alpha: 1),
                     fontColor8: WWSpecs.colorFromHex("547AEB", alpha: 1),
                     fontColor9: WWSpecs.colorFromHex("484848", alpha: 1),
                     fontColor10: WWSpecs.colorFromHex("4E4F52", alpha: 1),
