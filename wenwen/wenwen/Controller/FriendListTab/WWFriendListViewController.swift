@@ -34,7 +34,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             [
                 "icon": "splash",
                 "name": "云哥",
-                "desc": "双十一我们不挣钱，后悔创建阿里",
+                "desc": "双十一我们不是为了挣钱，后悔创建阿里",
                 "gender": "nan",
                 "age": "30岁",
                 "location": "昨天 | 杭州",

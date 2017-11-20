@@ -67,7 +67,12 @@ class WWCommunityViewController: WWTableViewController {
                 "icon": "splash",
                 "name": "好玩嗨站",
                 "desc": "属于千万病友休闲娱乐的小圈子"
-            ]
+            ],
+            [
+                "icon": "splash",
+                "name": "热门精选",
+                "desc": "网络热门主题，精选内容"
+            ],
         ]
     }
 
@@ -125,14 +130,26 @@ class WWCommunityViewController: WWTableViewController {
     // footer
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView.loadFromNibNamed(nibNamed: "WWCommunityFooterView") as? WWCommunityFooterView
+        configureFooterViewWithJSON(footerView!, footerData)
         return footerView
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 360
+        return 320
     }
     
-    func configureFooterViewWithJSON(_ data: [[String: String]]) {
+    func configureFooterViewWithJSON(_ footerView: WWCommunityFooterView, _ data: [[String: String]]) {
+        footerView.topIcon.image = UIImage(named: data[0]["icon"] ?? "")
+        footerView.topNameLabel.text = data[0]["name"] ?? ""
+        footerView.topDescLabel.text = data[0]["desc"] ?? ""
+        
+        footerView.middleIcon.image = UIImage(named: data[1]["icon"] ?? "")
+        footerView.middleNameLabel.text = data[1]["name"] ?? ""
+        footerView.middleDescLabel.text = data[1]["desc"] ?? ""
+        
+        footerView.bottomIcon.image = UIImage(named: data[2]["icon"] ?? "")
+        footerView.bottomNameLabel.text = data[2]["name"] ?? ""
+        footerView.bottomDescLabel.text = data[2]["desc"] ?? ""
         
     }
     
