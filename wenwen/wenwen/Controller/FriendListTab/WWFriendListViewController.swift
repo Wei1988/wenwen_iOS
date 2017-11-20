@@ -12,6 +12,7 @@ import iCarousel
 class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iCarouselDelegate {
     
     var data = [[String: String]]()
+    private var seletedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,7 +145,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
  
     // MARK: - Header View
     override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return 350
+        return 370
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -160,6 +161,17 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     private func setupHeaderView() -> UIView {
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
+        // bottom gap view
+        let gapView = UIView()
+        gapView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(gapView)
+        gapView.backgroundColor = wwTheme.bgColor2
+        gapView.snp.makeConstraints { (make) in
+            make.left.equalTo(containerView.snp.left)
+            make.right.equalTo(containerView.snp.right)
+            make.bottom.equalTo(containerView.snp.bottom)
+            make.height.equalTo(12)
+        }
         // bg imageview
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -185,11 +197,12 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         iCarouselView.snp.makeConstraints { (make) in
             make.left.equalTo(containerView.snp.left)
             make.right.equalTo(containerView.snp.right)
-            make.bottom.equalTo(containerView.snp.bottom).offset(-10)
+            make.bottom.equalTo(gapView.snp.top).offset(-8)
 //            make.top.equalTo(imageView.snp.bottom).offset(-WWSpecs.windowWidth()/6)
             make.centerY.equalTo(imageView.snp.bottom)
             make.height.equalTo(WWSpecs.windowWidth()/3+20)
         }
+        iCarouselView.scrollToItem(at: self.seletedIndex, animated: false)
         return containerView
         
     }
@@ -225,9 +238,12 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         return CATransform3DTranslate(newTransform, offset * (WWSpecs.windowWidth()/3-20) * 1.4, 0.0, 0.0);
     }
     
-
-    
-
-    
+    func carouselDidScroll(_ carousel: iCarousel) {
+        for view in carousel.visibleItemViews {
+            (view as? UIView)?.alpha = 0.7
+        }
+        carousel.currentItemView?.alpha = 1
+        self.seletedIndex = carousel.currentItemIndex
+    }
 
 }
