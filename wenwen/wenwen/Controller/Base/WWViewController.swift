@@ -129,7 +129,6 @@ final class WWNavigationController: UINavigationController, UIGestureRecognizerD
         self.navigationBar.isTranslucent = false
         self.interactivePopGestureRecognizer?.isEnabled = true
         self.interactivePopGestureRecognizer?.delegate = self
-        //    self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : CLSpecs.navgationTitleCorlor()]
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

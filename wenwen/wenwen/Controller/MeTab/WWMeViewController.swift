@@ -12,12 +12,11 @@ class WWMeViewController: WWTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.view.backgroundColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: wwTheme.fontColor4,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
+        ]
     }
 
     override func didReceiveMemoryWarning() {

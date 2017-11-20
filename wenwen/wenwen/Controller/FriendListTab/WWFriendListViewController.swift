@@ -108,6 +108,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         UIApplication.shared.statusBarStyle = .default
+//        self.navigationController?.navigationBar.shadowImage = nil
     }
 
 

@@ -8,13 +8,14 @@
 
 import UIKit
 
-class WWCircleViewController: WWTableViewController {
+class WWCommunityViewController: WWTableViewController {
     
     var data = [[String: String]]()
+    var footerData = [[String: String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor: wwTheme.fontColor4,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
@@ -52,8 +53,20 @@ class WWCircleViewController: WWTableViewController {
             ],
             [
                 "icon": "splash",
-                "name": "抗癌小分队",
-                "desc": "抗癌心得，生活感悟，在这里释放你的心情"
+                "name": "新人报到",
+                "desc": "欢迎加入问问大家庭"
+            ]
+        ]
+        footerData = [
+            [
+                "icon": "splash",
+                "name": "我来说故事",
+                "desc": "说说你在抗癌过程中的一二三"
+            ],
+            [
+                "icon": "splash",
+                "name": "好玩嗨站",
+                "desc": "属于千万病友休闲娱乐的小圈子"
             ]
         ]
     }
@@ -97,7 +110,7 @@ class WWCircleViewController: WWTableViewController {
         label.snp.makeConstraints { (make) in
             make.left.equalTo(headerView.snp.left).offset(15)
             make.bottom.equalTo(headerView.snp.bottom)
-            make.top.equalTo(headerView.snp.top)
+            make.top.equalTo(headerView.snp.top).offset(5)
             make.right.equalTo(headerView.snp.right)
         }
         label.text = "我关注的"
@@ -107,9 +120,20 @@ class WWCircleViewController: WWTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 35
     }
     // footer
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView.loadFromNibNamed(nibNamed: "WWCommunityFooterView") as? WWCommunityFooterView
+        return footerView
+    }
     
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 360
+    }
+    
+    func configureFooterViewWithJSON(_ data: [[String: String]]) {
+        
+    }
     
 }

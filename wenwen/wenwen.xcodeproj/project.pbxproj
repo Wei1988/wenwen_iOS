@@ -16,12 +16,15 @@
 		BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */; };
 		BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53C91FBDCAF000EA8031 /* WWHomeTabBarViewController.swift */; };
 		BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */; };
-		BF1F53D01FBDD28900EA8031 /* WWCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */; };
+		BF1F53D01FBDD28900EA8031 /* WWCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53CF1FBDD28900EA8031 /* WWCommunityViewController.swift */; };
 		BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */; };
 		BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */; };
 		BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */; };
 		BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */; };
 		BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */; };
+		BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */; };
+		BF6DA0111FC2F2DF00744FEE /* WWCommunityFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DA0101FC2F2DF00744FEE /* WWCommunityFooterView.xib */; };
+		BF6DA0131FC2F3D100744FEE /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA0121FC2F3D100744FEE /* UIExtension.swift */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -60,12 +63,15 @@
 		BF1F53C61FBC81F900EA8031 /* WWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLoginViewController.swift; sourceTree = "<group>"; };
 		BF1F53C91FBDCAF000EA8031 /* WWHomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWHomeTabBarViewController.swift; sourceTree = "<group>"; };
 		BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWFriendListViewController.swift; sourceTree = "<group>"; };
-		BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCircleViewController.swift; sourceTree = "<group>"; };
+		BF1F53CF1FBDD28900EA8031 /* WWCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityViewController.swift; sourceTree = "<group>"; };
 		BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWChatViewController.swift; sourceTree = "<group>"; };
 		BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWOverseaTreatmentViewController.swift; sourceTree = "<group>"; };
 		BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeViewController.swift; sourceTree = "<group>"; };
 		BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityTableViewCell.swift; sourceTree = "<group>"; };
 		BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityTableViewCell.xib; sourceTree = "<group>"; };
+		BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityFooterView.swift; sourceTree = "<group>"; };
+		BF6DA0101FC2F2DF00744FEE /* WWCommunityFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityFooterView.xib; sourceTree = "<group>"; };
+		BF6DA0121FC2F3D100744FEE /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -159,12 +165,12 @@
 			path = FriendListTab;
 			sourceTree = "<group>";
 		};
-		BF1F53CE1FBDD21900EA8031 /* CircleTab */ = {
+		BF1F53CE1FBDD21900EA8031 /* CommunityTab */ = {
 			isa = PBXGroup;
 			children = (
-				BF1F53CF1FBDD28900EA8031 /* WWCircleViewController.swift */,
+				BF1F53CF1FBDD28900EA8031 /* WWCommunityViewController.swift */,
 			);
-			path = CircleTab;
+			path = CommunityTab;
 			sourceTree = "<group>";
 		};
 		BF1F53D11FBDD29300EA8031 /* ChatTab */ = {
@@ -221,6 +227,8 @@
 		BF6DA0091FC2D19100744FEE /* FooterViews */ = {
 			isa = PBXGroup;
 			children = (
+				BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */,
+				BF6DA0101FC2F2DF00744FEE /* WWCommunityFooterView.xib */,
 			);
 			path = FooterViews;
 			sourceTree = "<group>";
@@ -292,7 +300,7 @@
 				BF1F53D71FBDD45500EA8031 /* MeTab */,
 				BF1F53D41FBDD3FB00EA8031 /* OverseaTreatmentTab */,
 				BF1F53D11FBDD29300EA8031 /* ChatTab */,
-				BF1F53CE1FBDD21900EA8031 /* CircleTab */,
+				BF1F53CE1FBDD21900EA8031 /* CommunityTab */,
 				BF1F53CB1FBDD0D900EA8031 /* FriendListTab */,
 				BF1F53C51FBC81A900EA8031 /* Login */,
 				BF784F0A1FB732400008DC38 /* Register */,
@@ -320,6 +328,7 @@
 				BF784F021FB705870008DC38 /* WWTheme.swift */,
 				BF784F0B1FB733930008DC38 /* GCDHelper.swift */,
 				BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */,
+				BF6DA0121FC2F3D100744FEE /* UIExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -445,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6DA0111FC2F2DF00744FEE /* WWCommunityFooterView.xib in Resources */,
 				BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */,
 				BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */,
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
@@ -544,11 +554,13 @@
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BFFE761E1FC0707D00E5D472 /* WWFriendListCell.swift in Sources */,
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
+				BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */,
 				BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */,
 				BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */,
+				BF6DA0131FC2F3D100744FEE /* UIExtension.swift in Sources */,
 				BF784F031FB705870008DC38 /* WWTheme.swift in Sources */,
 				BF1F53C31FBC484800EA8031 /* RegisterLoopCell.swift in Sources */,
-				BF1F53D01FBDD28900EA8031 /* WWCircleViewController.swift in Sources */,
+				BF1F53D01FBDD28900EA8031 /* WWCommunityViewController.swift in Sources */,
 				BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
 				BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */,

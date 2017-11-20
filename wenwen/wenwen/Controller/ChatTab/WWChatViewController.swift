@@ -9,10 +9,19 @@
 import UIKit
 
 class WWChatViewController: WWTableViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: wwTheme.fontColor4,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
+        ]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
