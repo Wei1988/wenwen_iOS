@@ -20,6 +20,8 @@
 		BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */; };
 		BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */; };
 		BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */; };
+		BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */; };
+		BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */; };
 		BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */; };
 		BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA0481FB7007E00B49A85 /* WWViewController.swift */; };
 		BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04D1FB7007E00B49A85 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWChatViewController.swift; sourceTree = "<group>"; };
 		BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWOverseaTreatmentViewController.swift; sourceTree = "<group>"; };
 		BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeViewController.swift; sourceTree = "<group>"; };
+		BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityTableViewCell.swift; sourceTree = "<group>"; };
+		BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityTableViewCell.xib; sourceTree = "<group>"; };
 		BF6EA0431FB7007E00B49A85 /* wenwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA0461FB7007E00B49A85 /* WWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAppDelegate.swift; sourceTree = "<group>"; };
 		BF6EA0481FB7007E00B49A85 /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
@@ -124,10 +128,9 @@
 		BF1F53BE1FBC42E000EA8031 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */,
-				BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */,
-				BFFE761C1FC0707D00E5D472 /* WWFriendListCell.swift */,
-				BFFE761D1FC0707D00E5D472 /* WWFriendListCell.xib */,
+				BF6DA0081FC2D15100744FEE /* CommunityTab */,
+				BF6DA0071FC2D14500744FEE /* iCarouselCell */,
+				BF6DA0061FC2D13600744FEE /* WenyouTab */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -188,6 +191,40 @@
 			path = MeTab;
 			sourceTree = "<group>";
 		};
+		BF6DA0061FC2D13600744FEE /* WenyouTab */ = {
+			isa = PBXGroup;
+			children = (
+				BFFE761C1FC0707D00E5D472 /* WWFriendListCell.swift */,
+				BFFE761D1FC0707D00E5D472 /* WWFriendListCell.xib */,
+			);
+			path = WenyouTab;
+			sourceTree = "<group>";
+		};
+		BF6DA0071FC2D14500744FEE /* iCarouselCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F53C11FBC484800EA8031 /* RegisterLoopCell.swift */,
+				BF1F53C21FBC484800EA8031 /* RegisterLoopCell.xib */,
+			);
+			path = iCarouselCell;
+			sourceTree = "<group>";
+		};
+		BF6DA0081FC2D15100744FEE /* CommunityTab */ = {
+			isa = PBXGroup;
+			children = (
+				BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */,
+				BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */,
+			);
+			path = CommunityTab;
+			sourceTree = "<group>";
+		};
+		BF6DA0091FC2D19100744FEE /* FooterViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FooterViews;
+			sourceTree = "<group>";
+		};
 		BF6EA03A1FB7007E00B49A85 = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +278,7 @@
 		BF6EA0671FB701BC00B49A85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF6DA0091FC2D19100744FEE /* FooterViews */,
 				BFFE76171FC01E1000E5D472 /* CarouselView */,
 				BF1F53BE1FBC42E000EA8031 /* Cell */,
 				BF784F071FB731660008DC38 /* Common */,
@@ -412,6 +450,7 @@
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
 				BFFE761F1FC0707D00E5D472 /* WWFriendListCell.xib in Resources */,
 				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
+				BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +557,7 @@
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
+				BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */,
 				BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */,
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
 				BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */,

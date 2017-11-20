@@ -13,6 +13,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     
     var data = [[String: String]]()
     private var seletedIndex: Int = 0
+    private let iCarouselView = iCarousel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,8 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         data = [
             [
                 "icon": "splash",
-                "name": "小明",
-                "desc": "我觉得我还可以再抢救一下",
+                "name": "林哥",
+                "desc": "先定一个能达到的小目标，比方说，先挣它一个亿",
                 "gender": "nv",
                 "age": "60岁",
                 "location": "17:20 | 北京",
@@ -32,18 +33,18 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             ],
             [
                 "icon": "splash",
-                "name": "小王",
-                "desc": "怀念秋刀鱼和大闸蟹的味道",
+                "name": "云哥",
+                "desc": "双十一我们不挣钱，后悔创建阿里",
                 "gender": "nan",
                 "age": "30岁",
-                "location": "昨天 | 深圳",
+                "location": "昨天 | 杭州",
                 "tagLeft": "病友家属",
                 "tagRight": "看帖狂人"
             ],
             [
             "icon": "splash",
-            "name": "小张",
-            "desc": "夜太美，总有人黑着眼眶熬着夜",
+            "name": "腾哥",
+            "desc": "我们都是普通家庭，没有什么特殊的，顶多是房子大了点",
             "gender": "nv",
             "age": "26岁",
             "location": "周四 | 广东",
@@ -52,8 +53,8 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             ],
             [
             "icon": "splash",
-            "name": "小马",
-            "desc": "双十一我们不挣钱，后悔创建阿里",
+            "name": "东哥",
+            "desc": "我这个人是脸盲，就是说根本就分不清楚谁漂亮不漂亮，说实话。我跟她在一起不是因为她漂亮，因为我根本不知道她漂不漂亮，就是因为觉得她这个人就是心地非常善良和纯粹的一个人",
             "gender": "nan",
             "age": "26岁",
             "location": "周三 | 杭州",
@@ -186,7 +187,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         imageView.image = UIImage.init(named: "bg_home")
 //        imageView.backgroundColor = .yellow
         // iCarousel view
-        let iCarouselView = iCarousel()
+        
         iCarouselView.dataSource = self
         iCarouselView.delegate = self
         iCarouselView.bounces = false
@@ -203,6 +204,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             make.height.equalTo(WWSpecs.windowWidth()/3+20)
         }
         iCarouselView.scrollToItem(at: self.seletedIndex, animated: false)
+        addShadowForVisibleCarouselViews()
         return containerView
         
     }
@@ -239,11 +241,15 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     }
     
     func carouselDidScroll(_ carousel: iCarousel) {
-        for view in carousel.visibleItemViews {
+        addShadowForVisibleCarouselViews()
+        self.seletedIndex = carousel.currentItemIndex
+    }
+    
+    func addShadowForVisibleCarouselViews() {
+        for view in self.iCarouselView.visibleItemViews {
             (view as? UIView)?.alpha = 0.7
         }
-        carousel.currentItemView?.alpha = 1
-        self.seletedIndex = carousel.currentItemIndex
+        self.iCarouselView.currentItemView?.alpha = 1
     }
 
 }

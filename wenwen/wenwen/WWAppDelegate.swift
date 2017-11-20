@@ -12,14 +12,21 @@ import UIKit
 class WWAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let home = WWRegisterOneViewController()
-        let navi = WWNavigationController(rootViewController: home)
-        window?.rootViewController = navi
+        
+        var isUserLoggedIn = true
+        if !isUserLoggedIn {
+            let home = WWRegisterOneViewController()
+            let navi = WWNavigationController(rootViewController: home)
+            window?.rootViewController = navi
+        } else {
+            let vc = WWHomeTabBarViewController()
+            window?.rootViewController = vc
+        }
         window?.makeKeyAndVisible()
         return true
     }
