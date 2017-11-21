@@ -105,6 +105,11 @@ class WWCommunityViewController: WWTableViewController {
         return 70
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = WWCommunityDetailViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     // header
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
