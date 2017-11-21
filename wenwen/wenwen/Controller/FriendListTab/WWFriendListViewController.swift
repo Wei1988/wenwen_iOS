@@ -144,6 +144,11 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         cell.tagLeftLabel.text = dict["tagLeft"] ?? ""
         cell.tagRightLabel.text = dict["tagRight"] ?? ""
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = WWProfileViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
  
     // MARK: - Header View
     override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {

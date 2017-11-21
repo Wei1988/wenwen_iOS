@@ -20,6 +20,10 @@
 		BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */; };
 		BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */; };
 		BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */; };
+		BF2CC4AF1FC431B900A3DB38 /* WWProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CC4AE1FC431B900A3DB38 /* WWProfileHeaderView.swift */; };
+		BF2CC4B11FC431CD00A3DB38 /* WWProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CC4B01FC431CD00A3DB38 /* WWProfileHeaderView.xib */; };
+		BF2CC4B31FC4322200A3DB38 /* WWProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CC4B21FC4322200A3DB38 /* WWProfileViewController.swift */; };
+		BF2CC4B51FC44F1C00A3DB38 /* WWTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CC4B41FC44F1C00A3DB38 /* WWTool.swift */; };
 		BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */; };
 		BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */; };
 		BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */; };
@@ -72,6 +76,10 @@
 		BF1F53D21FBDD2A400EA8031 /* WWChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWChatViewController.swift; sourceTree = "<group>"; };
 		BF1F53D51FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWOverseaTreatmentViewController.swift; sourceTree = "<group>"; };
 		BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeViewController.swift; sourceTree = "<group>"; };
+		BF2CC4AE1FC431B900A3DB38 /* WWProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWProfileHeaderView.swift; sourceTree = "<group>"; };
+		BF2CC4B01FC431CD00A3DB38 /* WWProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWProfileHeaderView.xib; sourceTree = "<group>"; };
+		BF2CC4B21FC4322200A3DB38 /* WWProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWProfileViewController.swift; sourceTree = "<group>"; };
+		BF2CC4B41FC44F1C00A3DB38 /* WWTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTool.swift; sourceTree = "<group>"; };
 		BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityTableViewCell.swift; sourceTree = "<group>"; };
 		BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityTableViewCell.xib; sourceTree = "<group>"; };
 		BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityFooterView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1F53CC1FBDD20600EA8031 /* WWFriendListViewController.swift */,
+				BF2CC4B21FC4322200A3DB38 /* WWProfileViewController.swift */,
 			);
 			path = FriendListTab;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 				BF784F0B1FB733930008DC38 /* GCDHelper.swift */,
 				BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */,
 				BF6DA0121FC2F3D100744FEE /* UIExtension.swift */,
+				BF2CC4B41FC44F1C00A3DB38 /* WWTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 			children = (
 				BFE37F7C1FC319430070202B /* CommunityDetailHeaderView.swift */,
 				BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */,
+				BF2CC4AE1FC431B900A3DB38 /* WWProfileHeaderView.swift */,
+				BF2CC4B01FC431CD00A3DB38 /* WWProfileHeaderView.xib */,
 			);
 			path = HeaderViews;
 			sourceTree = "<group>";
@@ -486,6 +498,7 @@
 				BFFE761F1FC0707D00E5D472 /* WWFriendListCell.xib in Resources */,
 				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
 				BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */,
+				BF2CC4B11FC431CD00A3DB38 /* WWProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +591,7 @@
 				BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */,
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BFFE761E1FC0707D00E5D472 /* WWFriendListCell.swift in Sources */,
+				BF2CC4B51FC44F1C00A3DB38 /* WWTool.swift in Sources */,
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
 				BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */,
 				BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */,
@@ -594,10 +608,12 @@
 				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
+				BF2CC4B31FC4322200A3DB38 /* WWProfileViewController.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
 				BFE37F821FC4097E0070202B /* WWCommunityDetailCell.swift in Sources */,
 				BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */,
+				BF2CC4AF1FC431B900A3DB38 /* WWProfileHeaderView.swift in Sources */,
 				BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */,
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
 				BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */,

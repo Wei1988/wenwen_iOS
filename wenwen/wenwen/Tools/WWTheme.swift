@@ -44,8 +44,8 @@ struct Theme {
     let bgColor1: UIColor
     /// #F5F5F5
     let bgColor2: UIColor
-    /// theme
-    let bgColor3: UIColor
+    /// #F9F9F9
+    let statusBarOriginalBGColor: UIColor
     /// 333
     let bgColor4: UIColor
     /// 666
@@ -94,7 +94,7 @@ let wwTheme = Theme(fontColor1: WWSpecs.colorFromHex("A6A6A6", alpha: 1),
                     fontColorGreen1: WWSpecs.colorFromHex("399d02", alpha: 1),
                     bgColor1: WWSpecs.colorFromHex("FF8A8A", alpha: 1),
                     bgColor2: WWSpecs.colorFromHex("F5F5F5", alpha: 1),
-                    bgColor3: WWSpecs.colorFromHex("FFDD00", alpha: 1),
+                    statusBarOriginalBGColor: WWSpecs.colorFromHex("F9F9F9", alpha: 1),
                     bgColor4: WWSpecs.colorFromHex("333333", alpha: 1),
                     bgColor5: WWSpecs.colorFromHex("666666", alpha: 1),
                     bgColor6: WWSpecs.colorFromHex("999999", alpha: 1),
