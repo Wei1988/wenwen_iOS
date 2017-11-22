@@ -40,7 +40,7 @@ final class CountDownHandler {
             if remainingSeconds == 0 {
                 countDownButton.setTitle(title, for: UIControlState())
                 countDownButton.isEnabled = true
-                countDownButton.backgroundColor = wwTheme.bgColor3
+                countDownButton.backgroundColor = wwTheme.statusBarOriginalBGColor
                 countDownButton.setTitleColor(WWSpecs.colorFromHex("472B34", alpha: 1), for: UIControlState())
                 return
             }
