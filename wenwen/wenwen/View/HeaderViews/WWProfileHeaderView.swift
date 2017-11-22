@@ -45,7 +45,7 @@ final class WWProfileHeaderView: UIView {
     }
     
     func setup() {
-        icon.layer.cornerRadius = 30
+        icon.layer.cornerRadius = 40
         icon.layer.masksToBounds = true
         gradeView.layer.cornerRadius = 3
         gradeView.layer.masksToBounds = true

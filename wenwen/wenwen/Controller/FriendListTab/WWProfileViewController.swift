@@ -130,14 +130,14 @@ class WWProfileViewController: WWTableViewController, ProfileDetailHeaderDelegat
         cell.articleTextLabel.numberOfLines = 0
         cell.articleTextLabel.attributedText = NSAttributedString.init(string: dict["text"] ?? "", attributes: [
             NSAttributedStringKey.foregroundColor : wwTheme.fontColor1,
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
             NSAttributedStringKey.paragraphStyle: style
             ])
     }
 
     // header
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 310
+        return 330
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

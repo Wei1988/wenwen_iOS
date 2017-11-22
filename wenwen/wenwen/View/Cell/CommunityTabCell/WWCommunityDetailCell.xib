@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WWCommunityDetailCell" rowHeight="160" id="KGk-i7-Jjw" customClass="WWCommunityDetailCell" customModule="wenwen" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WWCommunityDetailCell" rowHeight="180" id="KGk-i7-Jjw" customClass="WWCommunityDetailCell" customModule="wenwen" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -44,17 +44,17 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-iT-iko">
-                        <rect key="frame" x="16" y="69" width="287" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="16" y="69" width="287" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-ek-OCC">
-                        <rect key="frame" x="16" y="86" width="287" height="42"/>
+                        <rect key="frame" x="16" y="88.5" width="287" height="42"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="42" id="ANz-hR-Czh"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -106,7 +106,6 @@
                     <constraint firstItem="kAZ-i1-jH9" firstAttribute="centerY" secondItem="7aN-L2-huT" secondAttribute="centerY" constant="-1" id="ESl-M6-Dhs"/>
                     <constraint firstItem="KuW-uz-fld" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FjA-6n-a4q"/>
                     <constraint firstAttribute="trailingMargin" secondItem="S6q-mX-iak" secondAttribute="trailing" constant="-16" id="Fmb-sX-MjN"/>
-                    <constraint firstItem="Imk-Zl-WdH" firstAttribute="top" secondItem="lgc-ek-OCC" secondAttribute="bottom" constant="10" id="HoU-EM-41Z"/>
                     <constraint firstItem="cbR-L6-UG0" firstAttribute="centerY" secondItem="KuW-uz-fld" secondAttribute="centerY" id="NZW-z0-OPf"/>
                     <constraint firstItem="lgc-ek-OCC" firstAttribute="top" secondItem="bzD-iT-iko" secondAttribute="bottom" id="PxO-iA-DaW"/>
                     <constraint firstItem="dYL-d7-mKH" firstAttribute="leading" secondItem="KuW-uz-fld" secondAttribute="trailing" constant="10" id="RHB-zZ-Lsg"/>
@@ -114,6 +113,7 @@
                     <constraint firstItem="KuW-uz-fld" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="TFR-f8-TjU"/>
                     <constraint firstItem="wiG-rU-eHO" firstAttribute="leading" secondItem="7aN-L2-huT" secondAttribute="trailing" constant="12" id="Yp6-Ki-6w6"/>
                     <constraint firstItem="lgc-ek-OCC" firstAttribute="leading" secondItem="bzD-iT-iko" secondAttribute="leading" id="drT-Jq-46Z"/>
+                    <constraint firstItem="kAZ-i1-jH9" firstAttribute="top" secondItem="lgc-ek-OCC" secondAttribute="bottom" constant="5" id="gvQ-f8-Si6"/>
                     <constraint firstItem="7aN-L2-huT" firstAttribute="leading" secondItem="kAZ-i1-jH9" secondAttribute="trailing" constant="4" id="lDR-NZ-6VQ"/>
                     <constraint firstAttribute="trailing" secondItem="Imk-Zl-WdH" secondAttribute="trailing" constant="17" id="omK-rw-hSB"/>
                     <constraint firstItem="kbU-Z7-5kR" firstAttribute="leading" secondItem="dYL-d7-mKH" secondAttribute="leading" id="pyQ-fd-MiH"/>
