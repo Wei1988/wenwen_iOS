@@ -8,13 +8,33 @@
 
 import UIKit
 
-class WWProfileViewController: WWTableViewController {
+class WWProfileViewController: WWTableViewController, ProfileDetailHeaderDelegate {
+    
+    let bottomView = UIView()
+    
+    func recentTabClicked() {
+        
+    }
+    
+    func popularTabClicked() {
+        
+    }
+    
+    func communityTabClicked() {
+        
+    }
+    
+    func backButtonClicked() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
     var data = [[String: String]]()
     var headerData = [String: String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.edgesForExtendedLayout = .top
         self.view.backgroundColor = .white
         registerCell()
         setData()
@@ -27,11 +47,17 @@ class WWProfileViewController: WWTableViewController {
         WWTool.setStatusBarBackgroundColor(color: wwTheme.fontColor2)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        addBottomView()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         UIApplication.shared.statusBarStyle = .default
         WWTool.setStatusBarBackgroundColor(color: wwTheme.statusBarOriginalBGColor)
+        removeBottomView()
     }
     
     func registerCell() {
@@ -64,8 +90,10 @@ class WWProfileViewController: WWTableViewController {
         ]
         headerData = [
             "icon": "splash",
-            "name": "我来说故事",
-            "desc": "说说你在抗癌过程中的一二三"
+            "name": "林哥",
+            "grade": "Lv 5",
+            "location": "大连",
+            "desc": "签名：先定个小目标，比方说，先赚它一个亿"
         ]
     }
     
@@ -109,7 +137,7 @@ class WWProfileViewController: WWTableViewController {
 
     // header
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 320
+        return 310
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -118,10 +146,84 @@ class WWProfileViewController: WWTableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView.loadFromNibNamed(nibNamed: "WWProfileHeaderView") as? WWProfileHeaderView
-        //        headerView.backgroundColor = .gray
+        configureHeaderViewWithJSON(headerView!, headerData)
+        headerView!.delegate = self
         return headerView!
     }
-
     
-
+    func configureHeaderViewWithJSON(_ header: WWProfileHeaderView, _ data: [String: String]) {
+        header.icon.image = UIImage(named: data["icon"] ?? "")
+        header.nameLabel.text = data["name"] ?? ""
+        header.gradeLabel.text = data["grade"] ?? ""
+        header.locationLabel.text = data["location"] ?? ""
+        header.descLabel.text = data["desc"] ?? ""
+    }
+    
+    func removeBottomView() {
+        bottomView.removeFromSuperview()
+    }
+    
+    // bottom view
+    func addBottomView() {
+        let containerView = UIApplication.shared.windows.first!
+        containerView.addSubview(bottomView)
+        bottomView.backgroundColor = .white
+        bottomView.snp.makeConstraints { (make) in
+            make.left.equalTo(containerView.snp.left)
+            make.right.equalTo(containerView.snp.right)
+            make.bottom.equalTo(containerView.snp.bottom)
+            make.height.equalTo(50)
+        }
+        // follow btn & label
+        let followButton = UIButton()
+        followButton.translatesAutoresizingMaskIntoConstraints = false
+        bottomView.addSubview(followButton)
+        followButton.snp.makeConstraints { (make) in
+            make.centerX.equalTo(bottomView.snp.centerX).offset(-WWSpecs.windowWidth()/4)
+            make.width.height.equalTo(25)
+            make.top.equalTo(bottomView.snp.top).offset(5)
+        }
+        followButton.setImage(UIImage(named: "guanzhu"), for: UIControlState())
+        let followLabel = UILabel()
+        followLabel.translatesAutoresizingMaskIntoConstraints = false
+        bottomView.addSubview(followLabel)
+        followLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(followButton.snp.centerX)
+            make.top.equalTo(followButton.snp.bottom).offset(2)
+        }
+        followLabel.text = "关注"
+        followLabel.font = UIFont.systemFont(ofSize: 12)
+        followLabel.textColor = wwTheme.fontColor1
+//        // chat btn & label
+        let chatButton = UIButton()
+        chatButton.translatesAutoresizingMaskIntoConstraints = false
+        bottomView.addSubview(chatButton)
+        chatButton.snp.makeConstraints { (make) in make.centerX.equalTo(bottomView.snp.centerX).offset(WWSpecs.windowWidth()/4)
+            make.width.height.equalTo(25)
+            make.top.equalTo(bottomView.snp.top).offset(5)
+        }
+        chatButton.setImage(UIImage(named: "liaotian"), for: UIControlState())
+        let chatLabel = UILabel()
+        chatLabel.translatesAutoresizingMaskIntoConstraints = false
+        bottomView.addSubview(chatLabel)
+        chatLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(chatButton.snp.centerX)
+            make.top.equalTo(chatButton.snp.bottom).offset(2)
+        }
+        chatLabel.text = "聊天"
+        chatLabel.font = UIFont.systemFont(ofSize: 12)
+        chatLabel.textColor = wwTheme.fontColor1
+        
+        // divider
+        let divider = UIView()
+        divider.translatesAutoresizingMaskIntoConstraints = false
+        bottomView.addSubview(divider)
+        divider.snp.makeConstraints { (make) in
+            make.centerX.equalTo(bottomView.snp.centerX)
+            make.width.equalTo(1)
+            make.top.equalTo(bottomView.snp.top).offset(5)
+            make.bottom.equalTo(bottomView.snp.bottom).offset(-5)
+        }
+        divider.backgroundColor = wwTheme.borderColor1
+    }
 }

@@ -69,6 +69,7 @@ struct Theme {
     let bgGray2: UIColor
     let bgGray3: UIColor
     
+    // divider color
     let borderColor1: UIColor
     let borderColor2: UIColor
     let borderColor3: UIColor

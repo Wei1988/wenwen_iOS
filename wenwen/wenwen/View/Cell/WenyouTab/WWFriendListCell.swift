@@ -33,17 +33,18 @@ class WWFriendListCell: UITableViewCell {
     
     func setupCell() {
         topDividerLine.isHidden = true
-        nameLabel.font = UIFont.systemFont(ofSize: 14)
+        nameLabel.font = UIFont.systemFont(ofSize: 16)
         nameLabel.textColor = wwTheme.fontColor4
         genderView.layer.cornerRadius = 7.5
         genderView.layer.masksToBounds = true
         ageView.layer.cornerRadius = 7.5
         ageView.layer.masksToBounds = true
         ageLabel.textColor = UIColor.white
-        locationLabel.font = UIFont.systemFont(ofSize: 11)
+        locationLabel.font = UIFont.systemFont(ofSize: 14)
         locationLabel.textColor = wwTheme.fontColor1
-        descLabel.font = UIFont.systemFont(ofSize: 12)
+        descLabel.font = UIFont.systemFont(ofSize: 14)
         descLabel.textColor = wwTheme.fontColor4
+        descLabel.numberOfLines = 2
         tagLeftView.layer.borderWidth = 1
         tagLeftView.layer.borderColor = wwTheme.fontColor1.cgColor
         tagLeftView.layer.cornerRadius = 5

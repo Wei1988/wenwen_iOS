@@ -103,12 +103,14 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
             ]
         UIApplication.shared.statusBarStyle = .lightContent
+        WWTool.setStatusBarBackgroundColor(color: wwTheme.fontColor6)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         UIApplication.shared.statusBarStyle = .default
 //        self.navigationController?.navigationBar.shadowImage = nil
+        WWTool.setStatusBarBackgroundColor(color: wwTheme.statusBarOriginalBGColor)
     }
 
 
@@ -157,7 +159,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 110
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
