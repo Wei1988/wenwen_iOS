@@ -10,10 +10,7 @@ import UIKit
 
 class WWChatViewController: WWTableViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
+    var data = [[String: String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,83 +19,76 @@ class WWChatViewController: WWTableViewController {
             NSAttributedStringKey.foregroundColor: wwTheme.fontColor4,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
         ]
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        registerCell()
+        setData()
+    }
+    
+    func registerCell() {
+        self.tableView.register(UINib(nibName: String(describing: WWChatCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWChatCell.self))
+    }
+    
+    func setData() {
+        data = [
+            [
+                "icon": "splash",
+                "name": "壁虎漫步",
+                "desc": "抗癌心得，生活感悟，在这里释放你的心情",
+                "time": "30分钟前"
+            ],
+            [
+                "icon": "splash",
+                "name": "我相信",
+                "desc": "发起募捐，献爱心，寻找好的心灵慰藉",
+                "time": "昨天"
+            ],
+            [
+                "icon": "splash",
+                "name": "一剪梅",
+                "desc": "欢迎加入问问大家庭",
+                "time": "2017-11-10"
+            ]
+        ]
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WWChatCell", for: indexPath)
+        cell.selectionStyle = .none
+        configCellWithJSON(cell as! WWChatCell, self.data[indexPath.row])
+        if indexPath.row == 0 {
+            (cell as! WWChatCell).topLine.isHidden = false
+        }
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    func configCellWithJSON(_ cell: WWChatCell, _ dict: [String: String]) {
+        cell.icon.image = UIImage(named: dict["icon"] ?? "")
+        cell.nameLabel.text = dict["name"] ?? ""
+        cell.descLabel.text = dict["desc"] ?? ""
+        cell.timeLabel.text = dict["time"] ?? ""
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 76
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return nil
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
