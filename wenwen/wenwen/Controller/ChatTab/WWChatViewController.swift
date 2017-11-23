@@ -82,6 +82,7 @@ class WWChatViewController: WWTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = WWConversationViewController()
+        vc.titleString = data[indexPath.row]["name"] ?? ""
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }

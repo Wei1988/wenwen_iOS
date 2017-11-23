@@ -110,7 +110,7 @@ class WWCommunityDetailViewController: WWTableViewController {
         cell.articleTextLabel.numberOfLines = 0
         cell.articleTextLabel.attributedText = NSAttributedString.init(string: dict["articleText"] ?? "", attributes: [
             NSAttributedStringKey.foregroundColor : wwTheme.fontColor1,
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
             NSAttributedStringKey.paragraphStyle: style
             ])
         

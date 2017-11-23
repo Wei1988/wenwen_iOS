@@ -11,6 +11,8 @@ import UIKit
 class WWConversationViewController: WWViewController, UITableViewDelegate, UITableViewDataSource {
     
     var data = [[String: String]]()
+    var titleString: String?
+    
     
     private let bottomBarView = UIView()
     private let tableView = UITableView()
@@ -22,7 +24,7 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
             NSAttributedStringKey.foregroundColor: wwTheme.fontColor4,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)
         ]
-        title = "小明"
+        title = titleString ?? "小明"
         configRightBarItem()
         setupView()
         registerCell()
@@ -191,11 +193,9 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
         style.lineBreakMode = .byTruncatingTail
         cell.sendTextLabel.numberOfLines = 0
         cell.sendTextLabel.attributedText = NSAttributedString.init(string: dict["text"] ?? "", attributes: [
-            NSAttributedStringKey.foregroundColor : wwTheme.fontColor4,
+            NSAttributedStringKey.foregroundColor : UIColor.white,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
             NSAttributedStringKey.paragraphStyle: style
             ])
     }
-   
-    
 }

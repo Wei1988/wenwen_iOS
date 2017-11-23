@@ -165,15 +165,15 @@
                     <rect key="frame" x="0.0" y="285" width="125" height="44"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g22-5T-pK9">
-                            <rect key="frame" x="48" y="42" width="29" height="2"/>
+                            <rect key="frame" x="46" y="42" width="33" height="2"/>
                             <color key="backgroundColor" red="0.25882352939999997" green="0.76470588240000004" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="JRu-6j-IUC"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-7f-jCh">
-                            <rect key="frame" x="48" y="14" width="29" height="17"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <rect key="frame" x="46" y="13" width="33" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -191,15 +191,15 @@
                     <rect key="frame" x="250" y="285" width="125" height="44"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sva-WR-KsX">
-                            <rect key="frame" x="27" y="42" width="71.5" height="2"/>
+                            <rect key="frame" x="22" y="42" width="82" height="2"/>
                             <color key="backgroundColor" red="0.25882352939999997" green="0.76470588240000004" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="oP3-zh-wyY"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注的社区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76S-5g-N4a">
-                            <rect key="frame" x="27" y="13.5" width="71.5" height="17"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <rect key="frame" x="22" y="12.5" width="82" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -273,15 +273,15 @@
                     <rect key="frame" x="125" y="285" width="125" height="44"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qss-Bi-Z2A">
-                            <rect key="frame" x="48" y="42" width="29" height="2"/>
+                            <rect key="frame" x="46" y="42" width="33" height="2"/>
                             <color key="backgroundColor" red="0.25882352939999997" green="0.76470588240000004" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="1x7-UE-MMq"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZG-bq-JiZ">
-                            <rect key="frame" x="48" y="13.5" width="29" height="17"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <rect key="frame" x="46" y="12.5" width="33" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>

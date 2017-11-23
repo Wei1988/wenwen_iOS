@@ -125,7 +125,7 @@ class WWCommunityViewController: WWTableViewController {
         }
         label.text = "我关注的"
         label.textColor = wwTheme.fontColor4
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 16)
         return headerView
     }
     
@@ -140,7 +140,7 @@ class WWCommunityViewController: WWTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 320
+        return 330
     }
     
     func configureFooterViewWithJSON(_ footerView: WWCommunityFooterView, _ data: [[String: String]]) {
