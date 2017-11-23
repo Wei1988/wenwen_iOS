@@ -79,6 +79,12 @@ class WWChatViewController: WWTableViewController {
         cell.descLabel.text = dict["desc"] ?? ""
         cell.timeLabel.text = dict["time"] ?? ""
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = WWConversationViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 76

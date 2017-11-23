@@ -22,4 +22,5 @@ final class WWTool {
             statusBar.backgroundColor = color
         }
     }
+
 }
