@@ -9,16 +9,20 @@
 import UIKit
 
 class WWChatSendCell: UITableViewCell {
+    
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var sendBubbleImageView: UIImageView!
+    @IBOutlet weak var sendTextLabel: UILabel!
+    @IBOutlet weak var sendContainerView: UIView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.contentView.backgroundColor = wwTheme.bgGray2
+        sendBubbleImageView.image = UIImage(named: "sendBubble")?.resizableImage(withCapInsets: UIEdgeInsetsMake(30, 10, 10, 20))
+        sendContainerView.backgroundColor = .clear
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
 }

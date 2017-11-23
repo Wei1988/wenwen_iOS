@@ -23,29 +23,4 @@ class WWChatReceiveCell: UITableViewCell {
         textContainerView.backgroundColor = .clear
     }
 
-    func addTriangeToTextContainerView() {
-//        let layer = WWTool.addLeftTriangleToView(textContainerView)
-//        textContainerView.layer.mask = layer
-//        textContainerView.layer.addSublayer(layer)
-//        textContainerView.layer.masksToBounds = true
-       
-    }
-    
-    
-    
-//    let showView = UIImageView.init(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-    
-    
-//    showView.image = UIImage(named: "Snip20161312_3")
-//    showView.layer.mask = test(showView: showView)
-//    self.view.addSubview(showView)
-//
-    //UIView
-//    let blankView = UIView.init(frame: CGRect(x: 250, y: 100, width: 100, height: 100))
-    
-//    blankView.backgroundColor = UIColor.green
-//    blankView.layer.mask = test(showView: blankView)
-//    self.view.addSubview(blankView)
-    
-    
 }

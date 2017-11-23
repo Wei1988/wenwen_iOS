@@ -41,8 +41,17 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
             ],
             [
                 "icon": "splash",
-                "text": "欢迎加入问问大家庭"
-            ]
+                "text": "欢迎加入问问大家庭欢迎加入问问大家庭"
+            ],
+            [
+                "icon": "splash",
+                "text": "欢迎加入问问大家庭欢迎加入问问大家庭欢迎加入问问大家庭"
+            ],
+            [
+                "icon": "splash",
+                "text": "欢迎加入问问大家庭欢迎加入问问大家庭欢迎加入问问大家庭"
+            ],
+            
         ]
     }
     
@@ -57,6 +66,7 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
     
     func registerCell() {
         self.tableView.register(UINib(nibName: String(describing: WWChatReceiveCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWChatReceiveCell.self))
+        self.tableView.register(UINib(nibName: String(describing: WWChatSendCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWChatSendCell.self))
     }
     
     func setupView() {
@@ -146,14 +156,19 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WWChatReceiveCell", for: indexPath)
+        let cell = indexPath.row < 2 ?  tableView.dequeueReusableCell(withIdentifier: "WWChatReceiveCell", for: indexPath) : tableView.dequeueReusableCell(withIdentifier: "WWChatSendCell", for: indexPath)
         cell.selectionStyle = .none
-        configCellWithJSON(cell as! WWChatReceiveCell, self.data[indexPath.row])
-//        cell.layoutIfNeeded()
+        if let receiveCell = (cell as? WWChatReceiveCell) {
+            configCellWithJSON(receiveCell, self.data[indexPath.row])
+        } else if let sendCell = (cell as? WWChatSendCell) {
+            configCellWithJSON2(sendCell, self.data[indexPath.row])
+        }
+        
         return cell
     }
     
     func configCellWithJSON(_ cell: WWChatReceiveCell, _ dict: [String: String]) {
+        
         cell.icon.image = UIImage(named: dict["icon"] ?? "")
 //        cell.receiveTextLabel.text = dict["text"] ?? ""
         let style = NSMutableParagraphStyle()
@@ -167,6 +182,20 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
             ])
     }
     
+    func configCellWithJSON2(_ cell: WWChatSendCell, _ dict: [String: String]) {
+        
+        cell.icon.image = UIImage(named: dict["icon"] ?? "")
+        //        cell.receiveTextLabel.text = dict["text"] ?? ""
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 2.5
+        style.lineBreakMode = .byTruncatingTail
+        cell.sendTextLabel.numberOfLines = 0
+        cell.sendTextLabel.attributedText = NSAttributedString.init(string: dict["text"] ?? "", attributes: [
+            NSAttributedStringKey.foregroundColor : wwTheme.fontColor4,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
+            NSAttributedStringKey.paragraphStyle: style
+            ])
+    }
    
     
 }
