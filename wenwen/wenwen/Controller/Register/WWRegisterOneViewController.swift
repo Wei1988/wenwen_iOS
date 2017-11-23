@@ -38,7 +38,7 @@ class WWRegisterOneViewController: WWScrollViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+phoneTopGap+46+13+46+13+46+13+16+160+45+20+45+20)-20
+        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+phoneTopGap+46+13+46+13+46+13+16+160+45+20+45+20)-22
         buttonTopConstraint?.update(offset: 160 + gap)
         
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
