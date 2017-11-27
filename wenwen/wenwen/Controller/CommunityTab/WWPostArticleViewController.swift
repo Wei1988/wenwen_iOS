@@ -100,7 +100,7 @@ class WWPostArticleViewController: WWScrollViewController, YYTextViewDelegate {
             make.centerY.equalTo(bottomView.snp.centerY)
             make.left.equalTo(scrollContainerView.snp.left).offset(16)
         }
-        imageBtn.setImage(UIImage(named: "splash"), for: UIControlState())
+        imageBtn.setImage(UIImage(named: "tupian"), for: UIControlState())
         let emojiBtn = UIButton()
         emojiBtn.translatesAutoresizingMaskIntoConstraints = false
         bottomView.addSubview(emojiBtn)
@@ -109,7 +109,7 @@ class WWPostArticleViewController: WWScrollViewController, YYTextViewDelegate {
             make.centerY.equalTo(bottomView.snp.centerY)
             make.left.equalTo(imageBtn.snp.right).offset(20)
         }
-        emojiBtn.setImage(UIImage(named: "emoji"), for: UIControlState())
+        emojiBtn.setImage(UIImage(named: "biaoqing"), for: UIControlState())
     }
     
     // MARK: - Delegate methods

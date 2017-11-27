@@ -46,7 +46,7 @@ class WWLoginViewController: WWScrollViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+textfieldViewTopGap+93+30+buttonTopGap+buttonHeight+170+20+30+46+20)-40
+        let gap = WWSpecs.windowHeight() - (titleViewTopGap+titleViewHeight+textfieldViewTopGap+93+30+buttonTopGap+buttonHeight+170+20+30+46+20)-36
         buttonTopConstraint?.update(offset: 170 + gap)
     }
     
@@ -292,33 +292,9 @@ class WWLoginViewController: WWScrollViewController {
             make.right.equalTo(scrollContainerView.snp.right)
             make.bottom.equalTo(scrollContainerView.snp.bottom)
         }
-        bgImageView.contentMode = .scaleAspectFit
-        bgImageView.image = UIImage(named: "loginBG")
         
+        bgImageView.contentMode = .scaleAspectFit
+        bgImageView.image = UIImage(named: "dengluBG")
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

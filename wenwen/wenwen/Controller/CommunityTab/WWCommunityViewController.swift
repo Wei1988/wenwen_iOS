@@ -140,7 +140,7 @@ class WWCommunityViewController: WWTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 330
+        return 360
     }
     
     func configureFooterViewWithJSON(_ footerView: WWCommunityFooterView, _ data: [[String: String]]) {

@@ -60,6 +60,7 @@ class WWRegisterTwoViewController: WWScrollViewController {
         setupTitleView()
         setupTextfieldViews()
         setupButton()
+        setupBgImageView()
     }
    
     
@@ -160,6 +161,20 @@ class WWRegisterTwoViewController: WWScrollViewController {
         nextStepButton.layer.cornerRadius = 8
         nextStepButton.layer.masksToBounds = true
         nextStepButton.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
+    }
+    
+    func setupBgImageView() {
+        let bgImageView = UIImageView()
+        bgImageView.translatesAutoresizingMaskIntoConstraints = false
+        scrollContainerView.addSubview(bgImageView)
+        bgImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(scrollContainerView.snp.left)
+            make.right.equalTo(scrollContainerView.snp.right)
+            make.bottom.equalTo(scrollContainerView.snp.bottom)
+        }
+        bgImageView.contentMode = .scaleAspectFit
+        bgImageView.image = UIImage(named: "RegisterTwo")
+        
     }
     
 }

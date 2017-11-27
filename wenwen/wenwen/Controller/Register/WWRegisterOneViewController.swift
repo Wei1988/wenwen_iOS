@@ -242,7 +242,7 @@ class WWRegisterOneViewController: WWScrollViewController {
             make.bottom.equalTo(scrollContainerView.snp.bottom)
         }
         bgImageView.contentMode = .scaleAspectFit
-        bgImageView.image = UIImage(named: "loginBG")
+        bgImageView.image = UIImage(named: "RegisterOne")
         
     }
 }
