@@ -294,7 +294,7 @@ class WWLoginViewController: WWScrollViewController {
         }
         
         bgImageView.contentMode = .scaleAspectFit
-        bgImageView.image = UIImage(named: "dengluBG")
+        bgImageView.image = UIImage(named: "loginBG")
     }
     
 }
