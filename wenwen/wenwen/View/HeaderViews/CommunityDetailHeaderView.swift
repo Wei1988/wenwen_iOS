@@ -13,6 +13,7 @@ protocol CommunityDetailHeaderDelegate: NSObjectProtocol {
     func mostPopularTabClicked()
     func mvpTabClicked()
     func rankTabClicked()
+    func postArticleBtnClicked()
 }
 
 class CommunityDetailHeaderView: UIView {
@@ -42,6 +43,7 @@ class CommunityDetailHeaderView: UIView {
     @IBOutlet weak var popularTabBottomLine: UIView!
     @IBOutlet weak var mvpTabBottomLine: UIView!
     @IBOutlet weak var rankTabBottomLine: UIView!
+    
     
     
     weak var delegate: CommunityDetailHeaderDelegate?
@@ -80,6 +82,10 @@ class CommunityDetailHeaderView: UIView {
         mvpTabView.addGestureRecognizer(tap3)
         let tap4 = UITapGestureRecognizer.init(target: self, action: #selector(rankTabClicked))
         rankTabView.addGestureRecognizer(tap4)
+    }
+    
+    @IBAction func postArticleBtnClicked(_ sender: Any) {
+        self.delegate?.postArticleBtnClicked()
     }
     
     @objc func recentTabClicked() {

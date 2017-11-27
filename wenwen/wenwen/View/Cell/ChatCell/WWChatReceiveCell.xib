@@ -49,7 +49,7 @@
                             <constraint firstItem="nUS-OO-x00" firstAttribute="top" secondItem="JBD-OQ-wcO" secondAttribute="top" constant="10" id="g9x-Tn-eXS"/>
                             <constraint firstItem="nUS-OO-x00" firstAttribute="leading" secondItem="JBD-OQ-wcO" secondAttribute="leading" constant="16" id="rDQ-9r-LoJ"/>
                             <constraint firstAttribute="trailing" secondItem="nUS-OO-x00" secondAttribute="trailing" constant="12" id="uyt-2O-j9I"/>
-                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="uyy-Ff-khQ"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="uyy-Ff-khQ"/>
                         </constraints>
                     </view>
                 </subviews>

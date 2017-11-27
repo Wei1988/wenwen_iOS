@@ -10,5 +10,6 @@
 #define Wenwen_Bridging_Header_h
 
 #import <iCarousel/iCarousel.h>
+#import <YYText/YYText.h>
 
 #endif /* Wenwen_Bridging_Header_h */

@@ -46,7 +46,7 @@
                             <constraint firstItem="KCQ-KO-GUb" firstAttribute="leading" secondItem="NB2-Py-tae" secondAttribute="leading" id="CPm-MF-OwL"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Kbo-mr-J6g"/>
                             <constraint firstAttribute="bottom" secondItem="KCQ-KO-GUb" secondAttribute="bottom" id="ae2-Bd-I0Z"/>
-                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="gJG-Cp-1gS"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="gJG-Cp-1gS"/>
                             <constraint firstAttribute="trailing" secondItem="xLw-C4-Mu8" secondAttribute="trailing" constant="16" id="gYI-cM-i6q"/>
                             <constraint firstItem="xLw-C4-Mu8" firstAttribute="leading" secondItem="NB2-Py-tae" secondAttribute="leading" constant="12" id="iQn-kF-JRJ"/>
                             <constraint firstItem="xLw-C4-Mu8" firstAttribute="top" secondItem="NB2-Py-tae" secondAttribute="top" constant="10" id="nJw-Hz-Kxw"/>

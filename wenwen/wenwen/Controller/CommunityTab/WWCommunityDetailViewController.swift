@@ -8,7 +8,29 @@
 
 import UIKit
 
-class WWCommunityDetailViewController: WWTableViewController {
+class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHeaderDelegate {
+    func mostRecentTabClicked() {
+        
+    }
+    
+    func mostPopularTabClicked() {
+        
+    }
+    
+    func mvpTabClicked() {
+        
+    }
+    
+    func rankTabClicked() {
+        
+    }
+    
+    func postArticleBtnClicked() {
+        let vc = WWPostArticleViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     var data = [[String: String]]()
     var headerData = [String: String]()
@@ -126,6 +148,7 @@ class WWCommunityDetailViewController: WWTableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = UIView.loadFromNibNamed(nibNamed: "CommunityDetailHeaderView") as? CommunityDetailHeaderView
         configureHeaderViewWithJSON(header!, headerData)
+        header?.delegate = self
         return header!
     }
     

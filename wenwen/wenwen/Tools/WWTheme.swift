@@ -35,10 +35,14 @@ struct Theme {
     let fontColor12: UIColor
     /// light gray color
     let fontColor13: UIColor
+    
     /// red color
     let fontColorRed1: UIColor
     /// green
     let fontColorGreen1: UIColor
+    
+    /// #C0C0C6
+    let placeholderColor: UIColor
     
     /// #FF8A8A
     let bgColor1: UIColor
@@ -71,6 +75,7 @@ struct Theme {
     
     // divider color
     let borderColor1: UIColor
+    
     let borderColor2: UIColor
     let borderColor3: UIColor
     
@@ -93,6 +98,7 @@ let wwTheme = Theme(fontColor1: WWSpecs.colorFromHex("A6A6A6", alpha: 1),
                     fontColor13: WWSpecs.colorFromHex("898B8F", alpha: 1),
                     fontColorRed1: WWSpecs.colorFromHex("ca2934", alpha: 1),
                     fontColorGreen1: WWSpecs.colorFromHex("399d02", alpha: 1),
+                    placeholderColor: WWSpecs.colorFromHex("C0C0C6", alpha: 1),
                     bgColor1: WWSpecs.colorFromHex("FF8A8A", alpha: 1),
                     bgColor2: WWSpecs.colorFromHex("F5F5F5", alpha: 1),
                     statusBarOriginalBGColor: WWSpecs.colorFromHex("F9F9F9", alpha: 1),

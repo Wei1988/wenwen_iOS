@@ -32,6 +32,9 @@
                     <state key="normal" title="发布帖子" image="fabu">
                         <color key="titleColor" red="0.25882352939999997" green="0.76470588240000004" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="postArticleBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="fRM-KM-tKf"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社区管理员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-zi-bMU">
                     <rect key="frame" x="16" y="96" width="76.5" height="18"/>

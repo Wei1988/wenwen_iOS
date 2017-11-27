@@ -50,6 +50,7 @@
 		BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */; };
 		BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0B1FB733930008DC38 /* GCDHelper.swift */; };
 		BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */; };
+		BFCA72C81FCBF5BB00E23C0E /* WWPostArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA72C71FCBF5BB00E23C0E /* WWPostArticleViewController.swift */; };
 		BFE37F7A1FC317830070202B /* WWCommunityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE37F791FC317830070202B /* WWCommunityDetailViewController.swift */; };
 		BFE37F7D1FC319430070202B /* CommunityDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE37F7C1FC319430070202B /* CommunityDetailHeaderView.swift */; };
 		BFE37F7F1FC3194D0070202B /* CommunityDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */; };
@@ -112,13 +113,14 @@
 		BF6EA0571FB7007E00B49A85 /* wenwenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wenwenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenwenTests.swift; sourceTree = "<group>"; };
 		BF6EA05D1FB7007F00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF6EA06A1FB7031F00B49A85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BF6EA06A1FB7031F00B49A85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
 		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
 		BF784F051FB731620008DC38 /* WWTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTextFieldView.swift; sourceTree = "<group>"; };
 		BF784F081FB7323B0008DC38 /* WWRegisterOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRegisterOneViewController.swift; sourceTree = "<group>"; };
 		BF784F0B1FB733930008DC38 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		BF784F0D1FB733FA0008DC38 /* CountDownHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownHandler.swift; sourceTree = "<group>"; };
+		BFCA72C71FCBF5BB00E23C0E /* WWPostArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWPostArticleViewController.swift; sourceTree = "<group>"; };
 		BFE37F791FC317830070202B /* WWCommunityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityDetailViewController.swift; sourceTree = "<group>"; };
 		BFE37F7C1FC319430070202B /* CommunityDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailHeaderView.swift; sourceTree = "<group>"; };
 		BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityDetailHeaderView.xib; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				BF1F53CF1FBDD28900EA8031 /* WWCommunityViewController.swift */,
 				BFE37F791FC317830070202B /* WWCommunityDetailViewController.swift */,
+				BFCA72C71FCBF5BB00E23C0E /* WWPostArticleViewController.swift */,
 			);
 			path = CommunityTab;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -613,6 +617,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +657,7 @@
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
 				BF2CC4B31FC4322200A3DB38 /* WWProfileViewController.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
+				BFCA72C81FCBF5BB00E23C0E /* WWPostArticleViewController.swift in Sources */,
 				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
 				BFE37F821FC4097E0070202B /* WWCommunityDetailCell.swift in Sources */,
 				BF2CC4BD1FC5C42400A3DB38 /* WWChatCell.swift in Sources */,
