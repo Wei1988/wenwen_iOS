@@ -76,6 +76,7 @@ struct Theme {
     // divider color
     let borderColor1: UIColor
     
+    // default color
     let borderColor2: UIColor
     let borderColor3: UIColor
     
@@ -115,7 +116,7 @@ let wwTheme = Theme(fontColor1: WWSpecs.colorFromHex("A6A6A6", alpha: 1),
                     bgGray2: WWSpecs.colorFromHex("f2f2f2", alpha: 1),
                     bgGray3: WWSpecs.colorFromHex("f7f7f7", alpha: 1),
                     borderColor1: WWSpecs.colorFromHex("EBEBEB", alpha: 1),
-                    borderColor2: WWSpecs.colorFromHex("D8D8D8", alpha: 1),
+                    borderColor2: WWSpecs.colorFromHex("EFEFF4", alpha: 1),
                     borderColor3: WWSpecs.colorFromHex("E0E0E0", alpha: 1))
 
 

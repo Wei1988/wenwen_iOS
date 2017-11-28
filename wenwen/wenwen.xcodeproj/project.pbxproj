@@ -59,6 +59,10 @@
 		BFE37F7F1FC3194D0070202B /* CommunityDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */; };
 		BFE37F821FC4097E0070202B /* WWCommunityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE37F801FC4097E0070202B /* WWCommunityDetailCell.swift */; };
 		BFE37F831FC4097E0070202B /* WWCommunityDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE37F811FC4097E0070202B /* WWCommunityDetailCell.xib */; };
+		BFED320B1FCD5FD300C1E117 /* WWArticleReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFED32091FCD5FD300C1E117 /* WWArticleReplyCell.swift */; };
+		BFED320C1FCD5FD300C1E117 /* WWArticleReplyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFED320A1FCD5FD300C1E117 /* WWArticleReplyCell.xib */; };
+		BFED320E1FCD7B3A00C1E117 /* WWArticleFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFED320D1FCD7B3A00C1E117 /* WWArticleFooterView.swift */; };
+		BFED32101FCD7B5A00C1E117 /* WWArticleFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFED320F1FCD7B5A00C1E117 /* WWArticleFooterView.xib */; };
 		BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE76181FC01E3B00E5D472 /* CarouselView.swift */; };
 		BFFE761E1FC0707D00E5D472 /* WWFriendListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE761C1FC0707D00E5D472 /* WWFriendListCell.swift */; };
 		BFFE761F1FC0707D00E5D472 /* WWFriendListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFE761D1FC0707D00E5D472 /* WWFriendListCell.xib */; };
@@ -132,6 +136,10 @@
 		BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityDetailHeaderView.xib; sourceTree = "<group>"; };
 		BFE37F801FC4097E0070202B /* WWCommunityDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityDetailCell.swift; sourceTree = "<group>"; };
 		BFE37F811FC4097E0070202B /* WWCommunityDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityDetailCell.xib; sourceTree = "<group>"; };
+		BFED32091FCD5FD300C1E117 /* WWArticleReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWArticleReplyCell.swift; sourceTree = "<group>"; };
+		BFED320A1FCD5FD300C1E117 /* WWArticleReplyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWArticleReplyCell.xib; sourceTree = "<group>"; };
+		BFED320D1FCD7B3A00C1E117 /* WWArticleFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWArticleFooterView.swift; sourceTree = "<group>"; };
+		BFED320F1FCD7B5A00C1E117 /* WWArticleFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWArticleFooterView.xib; sourceTree = "<group>"; };
 		BFFE76131FBF236000E5D472 /* Wenwen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wenwen-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFFE76181FC01E3B00E5D472 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		BFFE761C1FC0707D00E5D472 /* WWFriendListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWFriendListCell.swift; sourceTree = "<group>"; };
@@ -289,6 +297,8 @@
 				BFE37F811FC4097E0070202B /* WWCommunityDetailCell.xib */,
 				BF33BE2E1FCC5E4E006B9744 /* WWArticleCell.swift */,
 				BF33BE2F1FCC5E4E006B9744 /* WWArticleCell.xib */,
+				BFED32091FCD5FD300C1E117 /* WWArticleReplyCell.swift */,
+				BFED320A1FCD5FD300C1E117 /* WWArticleReplyCell.xib */,
 			);
 			path = CommunityTabCell;
 			sourceTree = "<group>";
@@ -298,6 +308,8 @@
 			children = (
 				BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */,
 				BF6DA0101FC2F2DF00744FEE /* WWCommunityFooterView.xib */,
+				BFED320D1FCD7B3A00C1E117 /* WWArticleFooterView.swift */,
+				BFED320F1FCD7B5A00C1E117 /* WWArticleFooterView.xib */,
 			);
 			path = FooterViews;
 			sourceTree = "<group>";
@@ -541,6 +553,7 @@
 				BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */,
 				BFE37F7F1FC3194D0070202B /* CommunityDetailHeaderView.xib in Resources */,
 				BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */,
+				BFED320C1FCD5FD300C1E117 /* WWArticleReplyCell.xib in Resources */,
 				BF2CC4BE1FC5C42400A3DB38 /* WWChatCell.xib in Resources */,
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
 				BFFE761F1FC0707D00E5D472 /* WWFriendListCell.xib in Resources */,
@@ -551,6 +564,7 @@
 				BF2CC4B91FC463EF00A3DB38 /* WWProfileCell.xib in Resources */,
 				BF2CC4B11FC431CD00A3DB38 /* WWProfileHeaderView.xib in Resources */,
 				BF33BE311FCC5E4E006B9744 /* WWArticleCell.xib in Resources */,
+				BFED32101FCD7B5A00C1E117 /* WWArticleFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFED320E1FCD7B3A00C1E117 /* WWArticleFooterView.swift in Sources */,
 				BF1F53C71FBC81F900EA8031 /* WWLoginViewController.swift in Sources */,
 				BF784F0E1FB733FA0008DC38 /* CountDownHandler.swift in Sources */,
 				BFFE761E1FC0707D00E5D472 /* WWFriendListCell.swift in Sources */,
@@ -668,6 +683,7 @@
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF2CC4B81FC463EF00A3DB38 /* WWProfileCell.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
+				BFED320B1FCD5FD300C1E117 /* WWArticleReplyCell.swift in Sources */,
 				BF2CC4B31FC4322200A3DB38 /* WWProfileViewController.swift in Sources */,
 				BF6EA0471FB7007E00B49A85 /* WWAppDelegate.swift in Sources */,
 				BFCA72C81FCBF5BB00E23C0E /* WWPostArticleViewController.swift in Sources */,
