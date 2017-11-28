@@ -11,5 +11,6 @@
 
 #import <iCarousel/iCarousel.h>
 #import <YYText/YYText.h>
+#import <YYImage/YYImage.h>
 
 #endif /* Wenwen_Bridging_Header_h */

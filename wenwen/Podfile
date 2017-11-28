@@ -15,4 +15,5 @@ target 'wenwen' do
     pod 'SVProgressHUD'
     pod 'iCarousel'
     pod 'YYText'
+    pod 'YYImage'
 end

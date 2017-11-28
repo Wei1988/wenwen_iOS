@@ -33,6 +33,9 @@
 		BF2CC4C91FC673F200A3DB38 /* WWChatReceiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CC4C71FC673F200A3DB38 /* WWChatReceiveCell.xib */; };
 		BF2CC4CC1FC6740600A3DB38 /* WWChatSendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CC4CA1FC6740600A3DB38 /* WWChatSendCell.swift */; };
 		BF2CC4CD1FC6740600A3DB38 /* WWChatSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CC4CB1FC6740600A3DB38 /* WWChatSendCell.xib */; };
+		BF33BE2D1FCC58C1006B9744 /* WWArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33BE2C1FCC58C1006B9744 /* WWArticleViewController.swift */; };
+		BF33BE301FCC5E4E006B9744 /* WWArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33BE2E1FCC5E4E006B9744 /* WWArticleCell.swift */; };
+		BF33BE311FCC5E4E006B9744 /* WWArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF33BE2F1FCC5E4E006B9744 /* WWArticleCell.xib */; };
 		BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */; };
 		BF6DA00D1FC2D1C500744FEE /* WWCommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */; };
 		BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */; };
@@ -99,6 +102,9 @@
 		BF2CC4C71FC673F200A3DB38 /* WWChatReceiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWChatReceiveCell.xib; sourceTree = "<group>"; };
 		BF2CC4CA1FC6740600A3DB38 /* WWChatSendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWChatSendCell.swift; sourceTree = "<group>"; };
 		BF2CC4CB1FC6740600A3DB38 /* WWChatSendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWChatSendCell.xib; sourceTree = "<group>"; };
+		BF33BE2C1FCC58C1006B9744 /* WWArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWArticleViewController.swift; sourceTree = "<group>"; };
+		BF33BE2E1FCC5E4E006B9744 /* WWArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWArticleCell.swift; sourceTree = "<group>"; };
+		BF33BE2F1FCC5E4E006B9744 /* WWArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWArticleCell.xib; sourceTree = "<group>"; };
 		BF6DA00A1FC2D1C500744FEE /* WWCommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityTableViewCell.swift; sourceTree = "<group>"; };
 		BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWCommunityTableViewCell.xib; sourceTree = "<group>"; };
 		BF6DA00E1FC2EE2800744FEE /* WWCommunityFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWCommunityFooterView.swift; sourceTree = "<group>"; };
@@ -211,6 +217,7 @@
 				BF1F53CF1FBDD28900EA8031 /* WWCommunityViewController.swift */,
 				BFE37F791FC317830070202B /* WWCommunityDetailViewController.swift */,
 				BFCA72C71FCBF5BB00E23C0E /* WWPostArticleViewController.swift */,
+				BF33BE2C1FCC58C1006B9744 /* WWArticleViewController.swift */,
 			);
 			path = CommunityTab;
 			sourceTree = "<group>";
@@ -280,6 +287,8 @@
 				BF6DA00B1FC2D1C500744FEE /* WWCommunityTableViewCell.xib */,
 				BFE37F801FC4097E0070202B /* WWCommunityDetailCell.swift */,
 				BFE37F811FC4097E0070202B /* WWCommunityDetailCell.xib */,
+				BF33BE2E1FCC5E4E006B9744 /* WWArticleCell.swift */,
+				BF33BE2F1FCC5E4E006B9744 /* WWArticleCell.xib */,
 			);
 			path = CommunityTabCell;
 			sourceTree = "<group>";
@@ -541,6 +550,7 @@
 				BF2CC4CD1FC6740600A3DB38 /* WWChatSendCell.xib in Resources */,
 				BF2CC4B91FC463EF00A3DB38 /* WWProfileCell.xib in Resources */,
 				BF2CC4B11FC431CD00A3DB38 /* WWProfileHeaderView.xib in Resources */,
+				BF33BE311FCC5E4E006B9744 /* WWArticleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +613,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
@@ -617,6 +628,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
@@ -650,6 +662,7 @@
 				BF1F53BB1FBC3E4A00EA8031 /* WWRegisterThreeViewController.swift in Sources */,
 				BFE37F7A1FC317830070202B /* WWCommunityDetailViewController.swift in Sources */,
 				BF784F091FB7323B0008DC38 /* WWRegisterOneViewController.swift in Sources */,
+				BF33BE301FCC5E4E006B9744 /* WWArticleCell.swift in Sources */,
 				BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */,
 				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
@@ -660,6 +673,7 @@
 				BFCA72C81FCBF5BB00E23C0E /* WWPostArticleViewController.swift in Sources */,
 				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
 				BFE37F821FC4097E0070202B /* WWCommunityDetailCell.swift in Sources */,
+				BF33BE2D1FCC58C1006B9744 /* WWArticleViewController.swift in Sources */,
 				BF2CC4BD1FC5C42400A3DB38 /* WWChatCell.swift in Sources */,
 				BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */,
 				BF2CC4AF1FC431B900A3DB38 /* WWProfileHeaderView.swift in Sources */,

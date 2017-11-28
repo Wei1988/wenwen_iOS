@@ -121,6 +121,12 @@ class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHea
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = WWArticleViewController()
+        vc.userName = data[indexPath.row]["name"] ?? ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func configCellWithJSON(_ cell: WWCommunityDetailCell, _ dict: [String: String]) {
         cell.icon.image = UIImage(named: dict["icon"] ?? "")
         cell.nameLabel.text = dict["name"] ?? ""

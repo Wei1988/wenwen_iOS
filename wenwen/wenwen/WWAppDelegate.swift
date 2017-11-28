@@ -18,7 +18,7 @@ class WWAppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let isUserLoggedIn = false
+        let isUserLoggedIn = true
         if !isUserLoggedIn {
             let home = WWRegisterOneViewController()
             let navi = WWNavigationController(rootViewController: home)
