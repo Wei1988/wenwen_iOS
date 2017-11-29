@@ -63,7 +63,7 @@ class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHea
     func setData() {
         data = [
             [
-                "icon": "splash",
+                "icon": "nan1",
                 "name": "流年",
                 "time": "30分钟前",
                 "articleTitle": "男人癌在美国，五年生存率竟超90%",
@@ -72,7 +72,7 @@ class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHea
                 "messageCount": "10"
             ],
             [
-                "icon": "splash",
+                "icon": "nv1",
                 "name": "James",
                 "time": "2小时前",
                 "articleTitle": "国内看病难，美国为什么没有这种担忧",
@@ -81,7 +81,7 @@ class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHea
                 "messageCount": "26"
             ],
             [
-                "icon": "splash",
+                "icon": "nan3",
                 "name": "隔壁老王",
                 "time": "2017-11-18",
                 "articleTitle": "德国看病：体验享受式医疗",
@@ -91,12 +91,12 @@ class WWCommunityDetailViewController: WWTableViewController, CommunityDetailHea
             ]
         ]
         headerData = [
-                "icon": "splash",
+                "icon": "circle1",
                 "memberCount": "2万",
                 "articleCount": "1000",
-                "managerOneIcon": "splash",
-                "managerTwoIcon": "splash",
-                "managerThreeIcon": "splash"
+                "managerOneIcon": "nan1",
+                "managerTwoIcon": "nv1",
+                "managerThreeIcon": "nv3"
         ]
     }
     

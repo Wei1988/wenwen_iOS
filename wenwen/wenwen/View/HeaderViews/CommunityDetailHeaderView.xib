@@ -36,7 +36,7 @@
                         <action selector="postArticleBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="fRM-KM-tKf"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社区管理员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-zi-bMU">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圈子管理员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-zi-bMU">
                     <rect key="frame" x="16" y="96" width="76.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -207,21 +207,21 @@
                         <color key="titleColor" red="0.25882352939999997" green="0.76470588240000004" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-2E-0sO">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nan1" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-2E-0sO">
                     <rect key="frame" x="261" y="92.5" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="DZM-Km-T5N"/>
                         <constraint firstAttribute="height" constant="25" id="f1x-HW-Ok7"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Jkm-KZ-AGw">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nan2" translatesAutoresizingMaskIntoConstraints="NO" id="Jkm-KZ-AGw">
                     <rect key="frame" x="289" y="92.5" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="FMx-rU-8Kt"/>
                         <constraint firstAttribute="height" constant="25" id="y3V-7Y-RdY"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Vr-Cb-ebe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nv2" translatesAutoresizingMaskIntoConstraints="NO" id="1Vr-Cb-ebe">
                     <rect key="frame" x="317" y="92.5" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="HrA-IN-URs"/>
@@ -292,7 +292,7 @@
                 <outlet property="joinButton" destination="jCu-gd-bax" id="h4N-my-kN3"/>
                 <outlet property="managerOneIcon" destination="IN6-2E-0sO" id="xro-vl-l4L"/>
                 <outlet property="managerThreeIcon" destination="1Vr-Cb-ebe" id="0Dw-p7-0z1"/>
-                <outlet property="managerTwoIcon" destination="1Vr-Cb-ebe" id="N4f-Sm-2rS"/>
+                <outlet property="managerTwoIcon" destination="Jkm-KZ-AGw" id="oZ3-Iq-L8L"/>
                 <outlet property="memberCountLabel" destination="wid-V5-qBY" id="kQT-bx-oKR"/>
                 <outlet property="mostPopularTabLabel" destination="oKG-oi-zGI" id="xw3-mF-ejo"/>
                 <outlet property="mostPopularTabView" destination="y2r-Fj-Gij" id="XGF-zo-0Lh"/>
@@ -314,6 +314,8 @@
     <resources>
         <image name="fabu" width="17" height="17"/>
         <image name="forward" width="5" height="9"/>
-        <image name="splash" width="370" height="370"/>
+        <image name="nan1" width="200" height="200"/>
+        <image name="nan2" width="200" height="200"/>
+        <image name="nv2" width="200" height="200"/>
     </resources>
 </document>

@@ -137,7 +137,7 @@ class WWProfileViewController: WWTableViewController, ProfileDetailHeaderDelegat
 
     // header
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 330
+        return 340
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

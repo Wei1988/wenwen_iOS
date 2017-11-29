@@ -61,6 +61,9 @@ class CommunityDetailHeaderView: UIView {
         joinButton.layer.cornerRadius = 12
         joinButton.layer.masksToBounds = true
         
+        communityIcon.layer.cornerRadius = 4
+        communityIcon.layer.masksToBounds = true 
+        
         publishArticleButton.layer.borderWidth = 1
         publishArticleButton.layer.borderColor = wwTheme.fontColor2.cgColor
         publishArticleButton.layer.cornerRadius = 5
@@ -71,6 +74,13 @@ class CommunityDetailHeaderView: UIView {
         popularTabBottomLine.isHidden = true
         mvpTabBottomLine.isHidden = true
         rankTabBottomLine.isHidden = true
+        
+        managerOneIcon.layer.cornerRadius = 12.5
+        managerOneIcon.layer.masksToBounds = true
+        managerTwoIcon.layer.cornerRadius = 12.5
+        managerTwoIcon.layer.masksToBounds = true
+        managerThreeIcon.layer.cornerRadius = 12.5
+        managerThreeIcon.layer.masksToBounds = true
     }
     
     func addTapGestures() {
