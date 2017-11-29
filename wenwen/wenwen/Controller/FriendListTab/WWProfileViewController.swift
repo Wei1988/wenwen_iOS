@@ -28,7 +28,7 @@ class WWProfileViewController: WWTableViewController, ProfileDetailHeaderDelegat
         self.navigationController?.popViewController(animated: true)
     }
     
-    
+    var iconName: String?
     var data = [[String: String]]()
     var headerData = [String: String]()
 
@@ -152,7 +152,7 @@ class WWProfileViewController: WWTableViewController, ProfileDetailHeaderDelegat
     }
     
     func configureHeaderViewWithJSON(_ header: WWProfileHeaderView, _ data: [String: String]) {
-        header.icon.image = UIImage(named: data["icon"] ?? "")
+        header.icon.image = UIImage(named: iconName ?? "")
         header.nameLabel.text = data["name"] ?? ""
         header.gradeLabel.text = data["grade"] ?? ""
         header.locationLabel.text = data["location"] ?? ""

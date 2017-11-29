@@ -154,6 +154,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = WWProfileViewController()
         vc.hidesBottomBarWhenPushed = true
+        vc.iconName = data[indexPath.row]["icon"] ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
  
