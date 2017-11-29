@@ -8,7 +8,13 @@
 
 import UIKit
 
-class WWMeViewController: WWTableViewController {
+class WWMeViewController: WWTableViewController, WWMeHeaderDelegate {
+    
+    func viewSelected() {
+        let vc = WWEditMeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     var data = [[[String: String]]]()
 
@@ -51,42 +57,7 @@ class WWMeViewController: WWTableViewController {
         ]
     }
     
-//    func setData() {
-//        data = [
-//            [
-//                [
-//                    "title": "昵称",
-//                    "desc": "小明"
-//                ],
-//                [
-//                    "title": "性别",
-//                    "desc": "女"
-//                ],
-//                [
-//                    "title": "生日",
-//                    "desc": ""
-//                ]
-//            ],
-//            [
-//                [
-//                    "title": "身份",
-//                    "desc": "病友"
-//                ],
-//                [
-//                    "title": "标签",
-//                    "desc": ""
-//                ],
-//                [
-//                    "title": "所在城市",
-//                    "desc": "北京"
-//                ],
-//                [
-//                    "title": "签名",
-//                    "desc": "先定一个小目标"
-//                ]
-//            ]
-//        ]
-//    }
+
 
     func registerCell() {
         self.tableView.register(UINib(nibName: String(describing: WWMeProfileCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWMeProfileCell.self))
@@ -120,6 +91,7 @@ class WWMeViewController: WWTableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
             let headerView = UIView.loadFromNibNamed(nibNamed: "WWMeHeaderView") as? WWMeHeaderView
+            headerView?.delegate = self
             return headerView
         } else {
             return nil

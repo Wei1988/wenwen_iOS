@@ -53,6 +53,9 @@
 		BF75F9571FCDA73B00CB85F6 /* WWMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */; };
 		BF75F95A1FCDB09100CB85F6 /* WWMeProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */; };
 		BF75F95B1FCDB09100CB85F6 /* WWMeProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */; };
+		BF75F95D1FCE879500CB85F6 /* WWEditMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F95C1FCE879500CB85F6 /* WWEditMeViewController.swift */; };
+		BF75F9601FCE8B6500CB85F6 /* WWMeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F95E1FCE8B6500CB85F6 /* WWMeImageCell.swift */; };
+		BF75F9611FCE8B6500CB85F6 /* WWMeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F95F1FCE8B6500CB85F6 /* WWMeImageCell.xib */; };
 		BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F001FB7056E0008DC38 /* WWSpecs.swift */; };
 		BF784F031FB705870008DC38 /* WWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F021FB705870008DC38 /* WWTheme.swift */; };
 		BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F051FB731620008DC38 /* WWTextFieldView.swift */; };
@@ -136,6 +139,9 @@
 		BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeCell.xib; sourceTree = "<group>"; };
 		BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeProfileCell.swift; sourceTree = "<group>"; };
 		BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeProfileCell.xib; sourceTree = "<group>"; };
+		BF75F95C1FCE879500CB85F6 /* WWEditMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEditMeViewController.swift; sourceTree = "<group>"; };
+		BF75F95E1FCE8B6500CB85F6 /* WWMeImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeImageCell.swift; sourceTree = "<group>"; };
+		BF75F95F1FCE8B6500CB85F6 /* WWMeImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeImageCell.xib; sourceTree = "<group>"; };
 		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
 		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
 		BF784F051FB731620008DC38 /* WWTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTextFieldView.swift; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1F53D81FBDD46B00EA8031 /* WWMeViewController.swift */,
+				BF75F95C1FCE879500CB85F6 /* WWEditMeViewController.swift */,
 			);
 			path = MeTab;
 			sourceTree = "<group>";
@@ -436,6 +443,8 @@
 				BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */,
 				BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */,
 				BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */,
+				BF75F95E1FCE8B6500CB85F6 /* WWMeImageCell.swift */,
+				BF75F95F1FCE8B6500CB85F6 /* WWMeImageCell.xib */,
 			);
 			path = MeCell;
 			sourceTree = "<group>";
@@ -582,6 +591,7 @@
 				BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */,
 				BFED320C1FCD5FD300C1E117 /* WWArticleReplyCell.xib in Resources */,
 				BF2CC4BE1FC5C42400A3DB38 /* WWChatCell.xib in Resources */,
+				BF75F9611FCE8B6500CB85F6 /* WWMeImageCell.xib in Resources */,
 				BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */,
 				BFFE761F1FC0707D00E5D472 /* WWFriendListCell.xib in Resources */,
 				BF6EA04E1FB7007E00B49A85 /* Assets.xcassets in Resources */,
@@ -711,6 +721,7 @@
 				BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */,
 				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
 				BF75F9501FCD9E5100CB85F6 /* WWMeHeaderView.swift in Sources */,
+				BF75F95D1FCE879500CB85F6 /* WWEditMeViewController.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF2CC4B81FC463EF00A3DB38 /* WWProfileCell.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
@@ -721,6 +732,7 @@
 				BF1F53D91FBDD46B00EA8031 /* WWMeViewController.swift in Sources */,
 				BFE37F821FC4097E0070202B /* WWCommunityDetailCell.swift in Sources */,
 				BF33BE2D1FCC58C1006B9744 /* WWArticleViewController.swift in Sources */,
+				BF75F9601FCE8B6500CB85F6 /* WWMeImageCell.swift in Sources */,
 				BF2CC4BD1FC5C42400A3DB38 /* WWChatCell.swift in Sources */,
 				BF6DA00C1FC2D1C500744FEE /* WWCommunityTableViewCell.swift in Sources */,
 				BF2CC4AF1FC431B900A3DB38 /* WWProfileHeaderView.swift in Sources */,

@@ -15,6 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iun-Ww-Upc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-cb-nqp">
                     <rect key="frame" x="0.0" y="70" width="320" height="1"/>
                     <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,6 +40,12 @@
                         <constraint firstAttribute="width" constant="46" id="yrk-1V-dSX"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="小明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFE-I8-ffN">
+                    <rect key="frame" x="84" y="12" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-7A-uKo">
                     <rect key="frame" x="78" y="38" width="34" height="16"/>
                     <subviews>
@@ -147,17 +157,12 @@
                         <constraint firstItem="Tmc-yZ-uah" firstAttribute="leading" secondItem="WoB-pt-507" secondAttribute="trailing" constant="4" id="jhI-Bn-mq1"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="小明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFE-I8-ffN">
-                    <rect key="frame" x="84" y="12" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="W50-HB-7jS" firstAttribute="top" secondItem="rTn-cb-nqp" secondAttribute="bottom" id="3cC-hy-hzE"/>
                 <constraint firstAttribute="trailing" secondItem="R1U-Ex-i1G" secondAttribute="trailing" id="4LH-zK-D8P"/>
+                <constraint firstItem="iun-Ww-Upc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4LQ-7Y-ZYf"/>
                 <constraint firstAttribute="trailing" secondItem="W50-HB-7jS" secondAttribute="trailing" id="4X8-Mw-iEm"/>
                 <constraint firstItem="rTn-cb-nqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="92j-39-IJm"/>
                 <constraint firstItem="rTn-cb-nqp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AHU-Gl-ibD"/>
@@ -173,11 +178,14 @@
                 <constraint firstItem="xZY-7A-uKo" firstAttribute="top" secondItem="sFE-I8-ffN" secondAttribute="bottom" constant="3" id="be0-KW-4AX"/>
                 <constraint firstItem="W50-HB-7jS" firstAttribute="leading" secondItem="oRf-Gh-KWj" secondAttribute="trailing" id="bvB-oT-peq"/>
                 <constraint firstItem="xZY-7A-uKo" firstAttribute="leading" secondItem="sFE-I8-ffN" secondAttribute="leading" id="chn-ga-xbE"/>
+                <constraint firstAttribute="trailing" secondItem="iun-Ww-Upc" secondAttribute="trailing" id="eIk-Xl-9DB"/>
+                <constraint firstItem="iun-Ww-Upc" firstAttribute="bottom" secondItem="rTn-cb-nqp" secondAttribute="bottom" id="fV1-9L-VIa"/>
                 <constraint firstAttribute="bottom" secondItem="R1U-Ex-i1G" secondAttribute="bottom" id="gC8-cp-dRp"/>
                 <constraint firstItem="Ne9-MT-JaN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="j8B-Ao-Qgo"/>
                 <constraint firstItem="ge2-GR-fyG" firstAttribute="centerY" secondItem="eqR-8E-r7H" secondAttribute="centerY" id="pGd-g2-kWd"/>
                 <constraint firstAttribute="trailing" secondItem="ge2-GR-fyG" secondAttribute="trailing" constant="16" id="pho-uC-BPv"/>
                 <constraint firstItem="eqR-8E-r7H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qBi-dM-Uzb"/>
+                <constraint firstItem="iun-Ww-Upc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="stH-EM-UUK"/>
                 <constraint firstItem="Ne9-MT-JaN" firstAttribute="top" secondItem="rTn-cb-nqp" secondAttribute="bottom" id="vdC-Mg-Hqw"/>
                 <constraint firstItem="R1U-Ex-i1G" firstAttribute="top" secondItem="Ne9-MT-JaN" secondAttribute="bottom" id="wO2-zX-Dwl"/>
                 <constraint firstItem="R1U-Ex-i1G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wmw-yv-zXY"/>
@@ -187,6 +195,7 @@
             <connections>
                 <outlet property="icon" destination="eqR-8E-r7H" id="d3Q-KA-UgZ"/>
                 <outlet property="levelView" destination="xZY-7A-uKo" id="SK2-aU-fNK"/>
+                <outlet property="meView" destination="iun-Ww-Upc" id="MX0-U0-OPi"/>
             </connections>
         </view>
     </objects>

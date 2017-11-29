@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol WWMeHeaderDelegate: NSObjectProtocol {
+    func viewSelected()
+}
+
+
 class WWMeHeaderView: UIView {
     
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var levelView: UIView!
     
+    @IBOutlet weak var meView: UIView!
+    
+    weak var delegate: WWMeHeaderDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +30,13 @@ class WWMeHeaderView: UIView {
     func setup() {
         levelView.layer.cornerRadius = 2
         levelView.layer.masksToBounds = true
+        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(meViewTapped))
+        meView.addGestureRecognizer(tapGesture)
     }
+    
+    @objc func meViewTapped() {
+        self.delegate?.viewSelected()
+    }
+    
 
 }
