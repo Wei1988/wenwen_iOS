@@ -16,6 +16,8 @@ class WWMeImageCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
     }
 
     

@@ -34,23 +34,23 @@ class WWConversationViewController: WWViewController, UITableViewDelegate, UITab
     func setData() {
         data = [
             [
-                "icon": "splash",
+                "icon": "nan1",
                 "text": "抗癌心得，生活感悟，在这里释放你的心情"
             ],
             [
-                "icon": "splash",
+                "icon": "nan1",
                 "text": "发起募捐，献爱心，寻找好的心灵慰藉发起募捐，献爱心，寻找好的心灵慰藉发起募捐，献爱心，寻找好的心灵慰藉发起募捐，献爱心，寻找好的心灵慰藉"
             ],
             [
-                "icon": "splash",
+                "icon": "nv1",
                 "text": "欢迎加入问问大家庭欢迎加入问问大家庭"
             ],
             [
-                "icon": "splash",
+                "icon": "nv1",
                 "text": "欢迎加入问问大家庭欢迎加入问问大家庭欢迎加入问问大家庭"
             ],
             [
-                "icon": "splash",
+                "icon": "nv1",
                 "text": "欢迎加入问问大家庭欢迎加入问问大家庭欢迎加入问问大家庭"
             ],
             

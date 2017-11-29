@@ -30,19 +30,19 @@ class WWChatViewController: WWTableViewController {
     func setData() {
         data = [
             [
-                "icon": "splash",
+                "icon": "nan1",
                 "name": "壁虎漫步",
                 "desc": "抗癌心得，生活感悟，在这里释放你的心情",
                 "time": "30分钟前"
             ],
             [
-                "icon": "splash",
+                "icon": "nv2",
                 "name": "我相信",
                 "desc": "发起募捐，献爱心，寻找好的心灵慰藉",
                 "time": "昨天"
             ],
             [
-                "icon": "splash",
+                "icon": "nv3",
                 "name": "一剪梅",
                 "desc": "欢迎加入问问大家庭",
                 "time": "2017-11-10"

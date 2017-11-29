@@ -21,6 +21,8 @@ class WWChatSendCell: UITableViewCell {
         self.contentView.backgroundColor = wwTheme.bgGray2
         sendBubbleImageView.image = UIImage(named: "sendBubble")?.resizableImage(withCapInsets: UIEdgeInsetsMake(30, 10, 10, 20))
         sendContainerView.backgroundColor = .clear
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
     }
 
     

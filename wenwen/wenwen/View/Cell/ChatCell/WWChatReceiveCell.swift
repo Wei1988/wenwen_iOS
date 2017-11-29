@@ -21,6 +21,8 @@ class WWChatReceiveCell: UITableViewCell {
         self.contentView.backgroundColor = wwTheme.bgGray2
         bubbleImageView.image = UIImage(named: "receiveBubble")?.stretchableImage(withLeftCapWidth: 20, topCapHeight: 30)
         textContainerView.backgroundColor = .clear
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
     }
 
 }

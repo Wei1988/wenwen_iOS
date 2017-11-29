@@ -17,6 +17,8 @@ class WWCommunityTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        iconImageView.layer.cornerRadius = 4
+        iconImageView.layer.masksToBounds = true
     }
 
     

@@ -33,7 +33,7 @@
                         <constraint firstAttribute="height" constant="20" id="CJq-IN-lcR"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-8E-r7H">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nv1" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-8E-r7H">
                     <rect key="frame" x="16" y="12" width="46" height="46"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="nil-7J-cwk"/>
@@ -200,7 +200,7 @@
         </view>
     </objects>
     <resources>
+        <image name="nv1" width="300" height="300"/>
         <image name="qianwang" width="5" height="10"/>
-        <image name="splash" width="370" height="370"/>
     </resources>
 </document>

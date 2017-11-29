@@ -42,34 +42,34 @@ class WWCommunityViewController: WWTableViewController {
     func setData() {
         data = [
             [
-                "icon": "splash",
+                "icon": "circle1",
                 "name": "抗癌小分队",
                 "desc": "抗癌心得，生活感悟，在这里释放你的心情"
             ],
             [
-                "icon": "splash",
+                "icon": "circle2",
                 "name": "关爱白血病人",
                 "desc": "发起募捐，献爱心，寻找好的心灵慰藉"
             ],
             [
-                "icon": "splash",
+                "icon": "circle3",
                 "name": "新人报到",
                 "desc": "欢迎加入问问大家庭"
             ]
         ]
         footerData = [
             [
-                "icon": "splash",
+                "icon": "circle4",
                 "name": "我来说故事",
                 "desc": "说说你在抗癌过程中的一二三"
             ],
             [
-                "icon": "splash",
+                "icon": "circle5",
                 "name": "好玩嗨站",
                 "desc": "属于千万病友休闲娱乐的小圈子"
             ],
             [
-                "icon": "splash",
+                "icon": "circle6",
                 "name": "热门精选",
                 "desc": "网络热门主题，精选内容"
             ],

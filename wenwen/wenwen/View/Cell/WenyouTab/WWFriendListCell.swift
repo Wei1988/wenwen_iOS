@@ -32,6 +32,9 @@ class WWFriendListCell: UITableViewCell {
     }
     
     func setupCell() {
+        iconImageView.layer.cornerRadius = 4
+        iconImageView.layer.masksToBounds = true
+        
         topDividerLine.isHidden = true
         nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         nameLabel.textColor = wwTheme.fontColor4

@@ -28,7 +28,7 @@ class WWEditMeViewController: WWTableViewController {
             [
                 [
                     "title": "头像",
-                    "icon": "splash",
+                    "icon": "nv1",
                     "desc": ""
                 ],
                 [

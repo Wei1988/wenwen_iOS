@@ -12,6 +12,7 @@ import iCarousel
 class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iCarouselDelegate {
     
     var data = [[String: String]]()
+    var diseasesData = [String]()
     private var seletedIndex: Int = 0
     private let iCarouselView = iCarousel()
     
@@ -22,7 +23,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         self.tableView.register(UINib(nibName: String(describing: WWFriendListCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWFriendListCell.self))
         data = [
             [
-                "icon": "splash",
+                "icon": "nan1",
                 "name": "林哥",
                 "desc": "先定一个能达到的小目标，比方说，先挣它一个亿",
                 "gender": "nv",
@@ -32,7 +33,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
                 "tagRight": "乐于助人"
             ],
             [
-                "icon": "splash",
+                "icon": "nv1",
                 "name": "云哥",
                 "desc": "双十一我们不是为了挣钱，后悔创建阿里",
                 "gender": "nan",
@@ -42,7 +43,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
                 "tagRight": "看帖狂人"
             ],
             [
-            "icon": "splash",
+            "icon": "nan2",
             "name": "腾哥",
             "desc": "我们都是普通家庭，没有什么特殊的，顶多是房子大了点",
             "gender": "nv",
@@ -52,7 +53,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             "tagRight": "答题之星"
             ],
             [
-            "icon": "splash",
+            "icon": "nv2",
             "name": "东哥",
             "desc": "我这个人是脸盲，就是说根本就分不清楚谁漂亮不漂亮，说实话。我跟她在一起不是因为她漂亮，因为我根本不知道她漂不漂亮，就是因为觉得她这个人就是心地非常善良和纯粹的一个人",
             "gender": "nan",
@@ -62,8 +63,8 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             "tagRight": "健康达人"
             ],
             [
-            "icon": "splash",
-            "name": "老铁",
+            "icon": "nv3",
+            "name": "老方",
             "desc": "地铁上，跑步时，戴上耳机，这就是你一个的舞台",
             "gender": "nv",
             "age": "26岁",
@@ -72,7 +73,7 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             "tagRight": "水母"
             ],
             [
-            "icon": "splash",
+            "icon": "nan3",
             "name": "老铁",
             "desc": "一生之中弯弯曲曲我也要走过，当晚风轻轻吹过，闪出每个希望如",
             "gender": "nan",
@@ -81,6 +82,9 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
             "tagLeft": "病友家属",
             "tagRight": "水王"
             ],
+        ]
+        diseasesData = [
+            "癌症", "艾滋病", "白血病", "糖尿病", "抑郁症", "中医养生"
         ]
     }
     
@@ -229,8 +233,8 @@ class WWFriendListViewController: WWTableViewController, iCarouselDataSource, iC
         if iCarouselView == nil {
             iCarouselView = CarouselView.init(frame: CGRect.init(x: 0, y: 0, width: WWSpecs.windowWidth()/3-20, height: WWSpecs.windowWidth()/3+10))
         }
-        iCarouselView!.imageView.image = UIImage(named: "splash")
-        iCarouselView!.label.text = "癌症"
+        iCarouselView!.imageView.image = UIImage(named: diseasesData[index])
+        iCarouselView!.label.text = diseasesData[index]
         return iCarouselView!
     }
     

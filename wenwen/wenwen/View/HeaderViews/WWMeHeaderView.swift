@@ -32,6 +32,8 @@ class WWMeHeaderView: UIView {
         levelView.layer.masksToBounds = true
         let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(meViewTapped))
         meView.addGestureRecognizer(tapGesture)
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
     }
     
     @objc func meViewTapped() {

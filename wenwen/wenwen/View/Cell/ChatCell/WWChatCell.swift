@@ -21,6 +21,8 @@ class WWChatCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         topLine.isHidden = true
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
     }
 
     

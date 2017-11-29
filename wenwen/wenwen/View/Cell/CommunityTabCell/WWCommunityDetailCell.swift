@@ -33,6 +33,8 @@ class WWCommunityDetailCell: UITableViewCell {
         folllowBtn.layer.borderColor = wwTheme.fontColor2.cgColor
         folllowBtn.layer.borderWidth = 1
         folllowBtn.layer.masksToBounds = true
+        icon.layer.cornerRadius = 4
+        icon.layer.masksToBounds = true
         
     }
     
