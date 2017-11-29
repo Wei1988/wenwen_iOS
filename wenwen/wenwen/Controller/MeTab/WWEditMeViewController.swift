@@ -23,51 +23,51 @@ class WWEditMeViewController: WWTableViewController {
         registerCell()
     }
     
-        func setData() {
-            data = [
+    func setData() {
+        data = [
+            [
                 [
-                    [
-                        "title": "头像",
-                        "icon": "splash",
-                        "desc": ""
-                    ],
-                    [
-                        "title": "昵称",
-                        "desc": "小明"
-                    ],
-                    [
-                        "title": "性别",
-                        "desc": "女"
-                    ],
-                    [
-                        "title": "生日",
-                        "desc": ""
-                    ]
+                    "title": "头像",
+                    "icon": "splash",
+                    "desc": ""
                 ],
                 [
-                    [
-                        "title": "身份",
-                        "desc": "病友"
-                    ],
-                    [
-                        "title": "患病类型",
-                        "desc": "癌症"
-                    ],
-                    [
-                        "title": "标签",
-                        "desc": ""
-                    ],
-                    [
-                        "title": "所在城市",
-                        "desc": "北京"
-                    ],
-                    [
-                        "title": "签名",
-                        "desc": "先定一个小目标"
-                    ]
+                    "title": "昵称",
+                    "desc": "小明"
+                ],
+                [
+                    "title": "性别",
+                    "desc": "女"
+                ],
+                [
+                    "title": "生日",
+                    "desc": ""
+                ]
+            ],
+            [
+                [
+                    "title": "身份",
+                    "desc": "病友"
+                ],
+                [
+                    "title": "患病类型",
+                    "desc": "癌症"
+                ],
+                [
+                    "title": "标签",
+                    "desc": ""
+                ],
+                [
+                    "title": "所在城市",
+                    "desc": "北京"
+                ],
+                [
+                    "title": "签名",
+                    "desc": "先定一个小目标"
                 ]
             ]
-        }
+        ]
+    }
     
     func registerCell() {
         self.tableView.register(UINib(nibName: String(describing: WWMeCell.self), bundle: nil), forCellReuseIdentifier: String(describing: WWMeCell.self))

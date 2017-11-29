@@ -39,13 +39,23 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-kB-wyA">
+                        <rect key="frame" x="16" y="69" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dVm-zg-cBf"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="G7T-cF-4Wx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="87K-gk-vqN"/>
                     <constraint firstItem="REg-xe-4jo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CL7-ix-j1y"/>
                     <constraint firstItem="bpr-oo-6gj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CbS-eF-Pa2"/>
                     <constraint firstItem="bpr-oo-6gj" firstAttribute="leading" secondItem="REg-xe-4jo" secondAttribute="trailing" constant="10" id="OHP-Hs-J5f"/>
+                    <constraint firstItem="7nE-kB-wyA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OZw-DI-1fj"/>
                     <constraint firstItem="G7T-cF-4Wx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bSY-Pd-cRp"/>
+                    <constraint firstAttribute="trailing" secondItem="7nE-kB-wyA" secondAttribute="trailing" id="gn9-AO-p5n"/>
+                    <constraint firstAttribute="bottom" secondItem="7nE-kB-wyA" secondAttribute="bottom" id="hgY-uG-MhT"/>
                     <constraint firstAttribute="trailing" secondItem="bpr-oo-6gj" secondAttribute="trailing" constant="16" id="jdX-YU-VA0"/>
                 </constraints>
             </tableViewCellContentView>

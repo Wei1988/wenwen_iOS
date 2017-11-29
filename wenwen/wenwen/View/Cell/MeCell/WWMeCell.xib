@@ -25,6 +25,12 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-GC-m9W">
+                        <rect key="frame" x="244" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianwang" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-pA-c9e">
                         <rect key="frame" x="294" y="17.5" width="10" height="15"/>
                         <constraints>
@@ -32,19 +38,23 @@
                             <constraint firstAttribute="height" constant="15" id="s8a-8S-Huj"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-GC-m9W">
-                        <rect key="frame" x="244" y="15" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bb-Fp-Ukm">
+                        <rect key="frame" x="16" y="48" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xay-rg-uAp"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="s4J-T5-Zt9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="57D-RS-p2S"/>
                     <constraint firstItem="HGR-pA-c9e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KPu-xN-czc"/>
                     <constraint firstItem="hlR-GC-m9W" firstAttribute="centerY" secondItem="s4J-T5-Zt9" secondAttribute="centerY" id="MWV-cw-hhV"/>
+                    <constraint firstAttribute="trailing" secondItem="0Bb-Fp-Ukm" secondAttribute="trailing" id="ZcV-9B-2LO"/>
                     <constraint firstItem="HGR-pA-c9e" firstAttribute="leading" secondItem="hlR-GC-m9W" secondAttribute="trailing" constant="10" id="e18-Ka-i7u"/>
                     <constraint firstItem="s4J-T5-Zt9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fpZ-UH-5FS"/>
+                    <constraint firstItem="0Bb-Fp-Ukm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gZh-hz-bSx"/>
+                    <constraint firstAttribute="bottom" secondItem="0Bb-Fp-Ukm" secondAttribute="bottom" id="gho-nU-dWg"/>
                     <constraint firstAttribute="trailing" secondItem="HGR-pA-c9e" secondAttribute="trailing" constant="16" id="tEq-fA-myh"/>
                 </constraints>
             </tableViewCellContentView>

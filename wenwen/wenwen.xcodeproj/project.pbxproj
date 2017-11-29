@@ -56,6 +56,8 @@
 		BF75F95D1FCE879500CB85F6 /* WWEditMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F95C1FCE879500CB85F6 /* WWEditMeViewController.swift */; };
 		BF75F9601FCE8B6500CB85F6 /* WWMeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F95E1FCE8B6500CB85F6 /* WWMeImageCell.swift */; };
 		BF75F9611FCE8B6500CB85F6 /* WWMeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F95F1FCE8B6500CB85F6 /* WWMeImageCell.xib */; };
+		BF75F9651FCE911A00CB85F6 /* WWOverseaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F9631FCE911A00CB85F6 /* WWOverseaCell.swift */; };
+		BF75F9661FCE911A00CB85F6 /* WWOverseaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9641FCE911A00CB85F6 /* WWOverseaCell.xib */; };
 		BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F001FB7056E0008DC38 /* WWSpecs.swift */; };
 		BF784F031FB705870008DC38 /* WWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F021FB705870008DC38 /* WWTheme.swift */; };
 		BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F051FB731620008DC38 /* WWTextFieldView.swift */; };
@@ -142,6 +144,8 @@
 		BF75F95C1FCE879500CB85F6 /* WWEditMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEditMeViewController.swift; sourceTree = "<group>"; };
 		BF75F95E1FCE8B6500CB85F6 /* WWMeImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeImageCell.swift; sourceTree = "<group>"; };
 		BF75F95F1FCE8B6500CB85F6 /* WWMeImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeImageCell.xib; sourceTree = "<group>"; };
+		BF75F9631FCE911A00CB85F6 /* WWOverseaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWOverseaCell.swift; sourceTree = "<group>"; };
+		BF75F9641FCE911A00CB85F6 /* WWOverseaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWOverseaCell.xib; sourceTree = "<group>"; };
 		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
 		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
 		BF784F051FB731620008DC38 /* WWTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTextFieldView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 		BF1F53BE1FBC42E000EA8031 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BF75F9621FCE90BC00CB85F6 /* OverseaCell */,
 				BF75F9531FCDA72100CB85F6 /* MeCell */,
 				BF2CC4BA1FC5C40800A3DB38 /* ChatCell */,
 				BF6DA0081FC2D15100744FEE /* CommunityTabCell */,
@@ -449,6 +454,15 @@
 			path = MeCell;
 			sourceTree = "<group>";
 		};
+		BF75F9621FCE90BC00CB85F6 /* OverseaCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF75F9631FCE911A00CB85F6 /* WWOverseaCell.swift */,
+				BF75F9641FCE911A00CB85F6 /* WWOverseaCell.xib */,
+			);
+			path = OverseaCell;
+			sourceTree = "<group>";
+		};
 		BF784F041FB70A2D0008DC38 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE37F831FC4097E0070202B /* WWCommunityDetailCell.xib in Resources */,
+				BF75F9661FCE911A00CB85F6 /* WWOverseaCell.xib in Resources */,
 				BF75F9521FCD9E5D00CB85F6 /* WWMeHeaderView.xib in Resources */,
 				BF6DA0111FC2F2DF00744FEE /* WWCommunityFooterView.xib in Resources */,
 				BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */,
@@ -740,6 +755,7 @@
 				BF1F53CD1FBDD20600EA8031 /* WWFriendListViewController.swift in Sources */,
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
 				BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */,
+				BF75F9651FCE911A00CB85F6 /* WWOverseaCell.swift in Sources */,
 				BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */,
 				BF75F95A1FCDB09100CB85F6 /* WWMeProfileCell.swift in Sources */,
 			);
