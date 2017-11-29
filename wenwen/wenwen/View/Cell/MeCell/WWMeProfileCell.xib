@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WWMeProfileCell" rowHeight="60" id="KGk-i7-Jjw" customClass="WWMeProfileCell" customModule="wenwen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GNX-35-kbF">
+                        <rect key="frame" x="16" y="19" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="6sY-1F-NFC"/>
+                            <constraint firstAttribute="height" constant="30" id="WML-D6-LOo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-o1-Okc">
+                        <rect key="frame" x="56" y="25" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianwang" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-oh-w4K">
+                        <rect key="frame" x="294" y="26.5" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Xkr-HH-uFD"/>
+                            <constraint firstAttribute="height" constant="15" id="fXd-vd-ftT"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IS8-FF-dnu">
+                        <rect key="frame" x="16" y="60" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1Nq-IH-BcY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GNX-35-kbF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3TB-U8-qHG"/>
+                    <constraint firstItem="GNX-35-kbF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="4" id="Hx4-gg-yWE"/>
+                    <constraint firstItem="IS8-FF-dnu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="12" id="Ldh-hs-HNU"/>
+                    <constraint firstItem="ll7-o1-Okc" firstAttribute="centerY" secondItem="GNX-35-kbF" secondAttribute="centerY" id="OWu-mW-3cw"/>
+                    <constraint firstItem="CFe-oh-w4K" firstAttribute="centerY" secondItem="GNX-35-kbF" secondAttribute="centerY" id="jGl-FQ-dLi"/>
+                    <constraint firstItem="ll7-o1-Okc" firstAttribute="leading" secondItem="GNX-35-kbF" secondAttribute="trailing" constant="10" id="mBe-8l-dfB"/>
+                    <constraint firstItem="IS8-FF-dnu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nQa-3z-VKn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IS8-FF-dnu" secondAttribute="trailing" constant="-16" id="tbX-Qt-LAM"/>
+                    <constraint firstItem="CFe-oh-w4K" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="wTG-cB-9cP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="GNX-35-kbF" id="LsV-KX-d72"/>
+                <outlet property="titleLabel" destination="ll7-o1-Okc" id="KWs-bj-c4U"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qianwang" width="5" height="10"/>
+    </resources>
+</document>

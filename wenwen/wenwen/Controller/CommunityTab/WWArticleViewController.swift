@@ -85,6 +85,7 @@ class WWArticleViewController: WWTableViewController {
         cell.dateLabel.text = dict["date"] ?? ""
         let style = NSMutableParagraphStyle()
         style.lineSpacing = 5
+        style.alignment = .justified
         cell.descLabel.attributedText = NSAttributedString(string: dict["desc"] ?? "", attributes: [
             NSAttributedStringKey.foregroundColor : wwTheme.fontColor4,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),

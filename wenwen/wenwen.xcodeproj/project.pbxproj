@@ -47,6 +47,12 @@
 		BF6EA0511FB7007E00B49A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA04F1FB7007E00B49A85 /* LaunchScreen.storyboard */; };
 		BF6EA05C1FB7007F00B49A85 /* wenwenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */; };
 		BF6EA06B1FB7031F00B49A85 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF6EA06A1FB7031F00B49A85 /* Podfile */; };
+		BF75F9501FCD9E5100CB85F6 /* WWMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F94F1FCD9E5100CB85F6 /* WWMeHeaderView.swift */; };
+		BF75F9521FCD9E5D00CB85F6 /* WWMeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9511FCD9E5D00CB85F6 /* WWMeHeaderView.xib */; };
+		BF75F9561FCDA73B00CB85F6 /* WWMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F9541FCDA73B00CB85F6 /* WWMeCell.swift */; };
+		BF75F9571FCDA73B00CB85F6 /* WWMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */; };
+		BF75F95A1FCDB09100CB85F6 /* WWMeProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */; };
+		BF75F95B1FCDB09100CB85F6 /* WWMeProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */; };
 		BF784F011FB7056E0008DC38 /* WWSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F001FB7056E0008DC38 /* WWSpecs.swift */; };
 		BF784F031FB705870008DC38 /* WWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F021FB705870008DC38 /* WWTheme.swift */; };
 		BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF784F051FB731620008DC38 /* WWTextFieldView.swift */; };
@@ -124,6 +130,12 @@
 		BF6EA05B1FB7007F00B49A85 /* wenwenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenwenTests.swift; sourceTree = "<group>"; };
 		BF6EA05D1FB7007F00B49A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6EA06A1FB7031F00B49A85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF75F94F1FCD9E5100CB85F6 /* WWMeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeHeaderView.swift; sourceTree = "<group>"; };
+		BF75F9511FCD9E5D00CB85F6 /* WWMeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeHeaderView.xib; sourceTree = "<group>"; };
+		BF75F9541FCDA73B00CB85F6 /* WWMeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeCell.swift; sourceTree = "<group>"; };
+		BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeCell.xib; sourceTree = "<group>"; };
+		BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMeProfileCell.swift; sourceTree = "<group>"; };
+		BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWMeProfileCell.xib; sourceTree = "<group>"; };
 		BF784F001FB7056E0008DC38 /* WWSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWSpecs.swift; sourceTree = "<group>"; };
 		BF784F021FB705870008DC38 /* WWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTheme.swift; sourceTree = "<group>"; };
 		BF784F051FB731620008DC38 /* WWTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTextFieldView.swift; sourceTree = "<group>"; };
@@ -186,6 +198,7 @@
 		BF1F53BE1FBC42E000EA8031 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BF75F9531FCDA72100CB85F6 /* MeCell */,
 				BF2CC4BA1FC5C40800A3DB38 /* ChatCell */,
 				BF6DA0081FC2D15100744FEE /* CommunityTabCell */,
 				BF6DA0071FC2D14500744FEE /* iCarouselCell */,
@@ -416,6 +429,17 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		BF75F9531FCDA72100CB85F6 /* MeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF75F9541FCDA73B00CB85F6 /* WWMeCell.swift */,
+				BF75F9551FCDA73B00CB85F6 /* WWMeCell.xib */,
+				BF75F9581FCDB09100CB85F6 /* WWMeProfileCell.swift */,
+				BF75F9591FCDB09100CB85F6 /* WWMeProfileCell.xib */,
+			);
+			path = MeCell;
+			sourceTree = "<group>";
+		};
 		BF784F041FB70A2D0008DC38 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +474,8 @@
 				BFE37F7E1FC3194D0070202B /* CommunityDetailHeaderView.xib */,
 				BF2CC4AE1FC431B900A3DB38 /* WWProfileHeaderView.swift */,
 				BF2CC4B01FC431CD00A3DB38 /* WWProfileHeaderView.xib */,
+				BF75F94F1FCD9E5100CB85F6 /* WWMeHeaderView.swift */,
+				BF75F9511FCD9E5D00CB85F6 /* WWMeHeaderView.xib */,
 			);
 			path = HeaderViews;
 			sourceTree = "<group>";
@@ -549,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE37F831FC4097E0070202B /* WWCommunityDetailCell.xib in Resources */,
+				BF75F9521FCD9E5D00CB85F6 /* WWMeHeaderView.xib in Resources */,
 				BF6DA0111FC2F2DF00744FEE /* WWCommunityFooterView.xib in Resources */,
 				BF1F53C41FBC484800EA8031 /* RegisterLoopCell.xib in Resources */,
 				BFE37F7F1FC3194D0070202B /* CommunityDetailHeaderView.xib in Resources */,
@@ -564,6 +591,8 @@
 				BF2CC4B91FC463EF00A3DB38 /* WWProfileCell.xib in Resources */,
 				BF2CC4B11FC431CD00A3DB38 /* WWProfileHeaderView.xib in Resources */,
 				BF33BE311FCC5E4E006B9744 /* WWArticleCell.xib in Resources */,
+				BF75F95B1FCDB09100CB85F6 /* WWMeProfileCell.xib in Resources */,
+				BF75F9571FCDA73B00CB85F6 /* WWMeCell.xib in Resources */,
 				BFED32101FCD7B5A00C1E117 /* WWArticleFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +694,7 @@
 				BF2CC4B51FC44F1C00A3DB38 /* WWTool.swift in Sources */,
 				BF03650D1FBAF29100C0D670 /* WWRegisterTwoViewController.swift in Sources */,
 				BF6DA00F1FC2EE2800744FEE /* WWCommunityFooterView.swift in Sources */,
+				BF75F9561FCDA73B00CB85F6 /* WWMeCell.swift in Sources */,
 				BF2CC4C01FC5C91200A3DB38 /* WWConversationViewController.swift in Sources */,
 				BF1F53D61FBDD43A00EA8031 /* WWOverseaTreatmentViewController.swift in Sources */,
 				BF2CC4CC1FC6740600A3DB38 /* WWChatSendCell.swift in Sources */,
@@ -680,6 +710,7 @@
 				BF33BE301FCC5E4E006B9744 /* WWArticleCell.swift in Sources */,
 				BFFE76191FC01E3B00E5D472 /* CarouselView.swift in Sources */,
 				BF1F53D31FBDD2A400EA8031 /* WWChatViewController.swift in Sources */,
+				BF75F9501FCD9E5100CB85F6 /* WWMeHeaderView.swift in Sources */,
 				BF6EA0491FB7007E00B49A85 /* WWViewController.swift in Sources */,
 				BF2CC4B81FC463EF00A3DB38 /* WWProfileCell.swift in Sources */,
 				BF1F53BD1FBC424000EA8031 /* LoopCollectionViewLayout.swift in Sources */,
@@ -698,6 +729,7 @@
 				BF784F061FB731620008DC38 /* WWTextFieldView.swift in Sources */,
 				BF1F53CA1FBDCAF000EA8031 /* WWHomeTabBarViewController.swift in Sources */,
 				BF784F0C1FB733930008DC38 /* GCDHelper.swift in Sources */,
+				BF75F95A1FCDB09100CB85F6 /* WWMeProfileCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
